@@ -1,5 +1,11 @@
+
 p{
     margin: 10px 0 !important;
+    
+}
+
+*{
+    color: pink;
 }
 
 .login-container {
