@@ -89,20 +89,25 @@ app.use('/login', router)
 
 // ----------------------------------------------------------------
 
+// *****    Route to LOGIN PAGE - welcome page (no auth yet)
+app.use('/profile', router)
+
+// ******* created - commented direct route below:
+
+// app.get('/profile', (req, res) => {
+//     res.render("pages/profile");
+// })
+
+// ----------------------------------------------------------------
+
+//  yoga - general infos/ no auth required
+app.use('/yoga', router)
 
 
+// meditation   bla bla kA was hier sein soll, aber muss eingeloggt sein
+app.use('/meditation', router)
 
-
-
-
-app.get('/register', (req, res) => {
-    res.render("pages/register");
-})
-
-
-app.get('/meditation', (req, res) => {
-    res.render("pages/meditation");
-})
+// !   NICHT BEARBEITETE ROUTES BELOW
 
 app.get('/med_player', (req, res) => {
     res.render("pages/meditation_player");
@@ -112,9 +117,7 @@ app.get('/music', (req, res) => {
     res.render("pages/music");
 })
 
-app.get('/profile', (req, res) => {
-    res.render("pages/profile");
-})
+
 app.get('/reminders', (req, res) => {
     res.render("pages/reminders");
 })
@@ -123,8 +126,11 @@ app.get('/yoga_details', (req, res) => {
     res.render("pages/yoga_details");
 })
 
-app.get('/yoga', (req, res) => {
-    res.render("pages/yoga");
+
+
+//  NEEDED?
+app.get('/register', (req, res) => {
+    res.render("pages/register");
 })
 
 
