@@ -52,6 +52,10 @@ app.use(express.json())
 // * ********************************
 
 
+// ?    AUTH
+
+app.use('/auth', require('./routes/auth'))
+
 
 // *****    Route to HOME - welcome page (no auth needed)
 
