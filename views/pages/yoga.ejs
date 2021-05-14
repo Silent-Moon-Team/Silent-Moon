@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga</title>
 </head>
+
 <body>
     <h1>Yoga page</h1>
+    <section>
+        <% result.forEach(element=> { %>
+            <div>
+                <img src=<%=element.img_url %> alt="coolesBild" with="300px" height="300px">
+                <video width="300" height="300" controls>
+                    <source src=<%=element.url_video %> >
+                </video>
+                <h1>
+                    <%= element.title %>
+                </h1>
+                <p>
+                    <%= element.level %>
+                </p>
+                <p>
+                    <%= element.description %>
+                </p>
+            </div>
+            <% }) %>
+    </section>
 </body>
+
 </html>

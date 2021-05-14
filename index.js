@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport')
+const dataItem = require('./models/data');
 // const cookieSession = require('cookie-session')
 const session = require('express-session');
 
@@ -21,7 +22,6 @@ const app = express()
 connectDB()
 
 
-
 const PORT = process.env.PORT || 5000
 
 // static foldees -   css...
@@ -35,8 +35,8 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    
-  }))
+
+}))
 
 // passport middleware
 app.use(passport.initialize())
