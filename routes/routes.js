@@ -1,11 +1,12 @@
 const express = require('express');
+const dataItem = require('../models/data')
 const router = express.Router();
-const {ensureAuth, ensureGuest} = require('../middleware/auth')
+const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 // ?desc  Main/ Landing page (MAIN)  -   no auth required
 // ?route  GET /
 
-router.get('/', ensureGuest,  (req, res) => {
+router.get('/', ensureGuest, (req, res) => {
     res.render('pages/main')
     console.log("this is welcome page from routes");
 })
@@ -22,8 +23,13 @@ router.get('/login', ensureGuest, (req, res) => {
 // ?route  GET /
 
 router.get('/yoga', (req, res) => {
-    res.render('pages/yoga')
-    console.log("this is from LOGIN routes");
+    dataItem.find()
+        .then(result => {
+            console.log("this is from LOGIN routes");
+            //console.log(result)
+            res.render('pages/yoga', { result })
+        })
+        .catch(err => console.log(err))
 })
 
 
@@ -43,13 +49,13 @@ router.get('/home', ensureAuth, (req, res) => {
 })
 
 
-router.get('/profile', ensureAuth,  (req, res) => {
+router.get('/profile', ensureAuth, (req, res) => {
     res.render('pages/profile')
     console.log("this is from LOGIN routes");
 
 })
 
-router.get('/meditation', ensureAuth,  (req, res) => {
+router.get('/meditation', ensureAuth, (req, res) => {
     res.render("pages/meditation");
 })
 
