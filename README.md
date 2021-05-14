@@ -19,5 +19,3 @@ Team members:
 - Philipp Frentzen
 - Simon Burghardt
 - Steffen Klömpges
-
-Translated with www.DeepL.com/Translator (free version)
