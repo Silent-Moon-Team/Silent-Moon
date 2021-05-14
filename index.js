@@ -112,20 +112,14 @@ app.use('/med_player', router)
 
 app.get('/music', router)
 
+app.get('/reminders', router)
+
+
+app.get('/yoga_details', router)
+
 
 
 // !   NICHT BEARBEITETE ROUTES BELOW
-
-
-app.get('/reminders', (req, res) => {
-    res.render("pages/reminders");
-})
-
-app.get('/yoga_details', (req, res) => {
-    res.render("pages/yoga_details");
-})
-
-
 
 //  NEEDED?
 app.get('/register', (req, res) => {
@@ -134,9 +128,8 @@ app.get('/register', (req, res) => {
 
 
 
-
 app.listen(PORT, () => {
-    console.log('listening at http:localhost:5000');
+    console.log(`listening at http:localhost:${PORT}`);
 })
 
 //Steffen war hier

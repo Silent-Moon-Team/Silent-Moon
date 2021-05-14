@@ -68,5 +68,12 @@ router.get('/music', ensureAuth,  (req, res) => {
     res.render("pages/music");
 })
 
+router.get('/reminders', ensureAuth,  (req, res) => {
+    res.render("pages/reminders");
+})
+
+router.get('/yoga_details', ensureAuth, (req, res) => {
+    res.render("pages/yoga_details");
+})
 
 module.exports = router;
