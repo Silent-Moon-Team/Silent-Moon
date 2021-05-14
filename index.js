@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport')
 const dataItem = require('./models/data');
+
 // const cookieSession = require('cookie-session')
 const session = require('express-session');
 
@@ -46,6 +47,7 @@ app.use(passport.session())
 app.use(express.urlencoded({ extended: false }))
 // parse application/json
 app.use(express.json())
+
 
 // * ********************************
 // ******      ROUTINGS  *************
