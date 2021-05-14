@@ -107,15 +107,14 @@ app.use('/yoga', router)
 // meditation   bla bla kA was hier sein soll, aber muss eingeloggt sein
 app.use('/meditation', router)
 
+
+app.use('/med_player', router)
+
+app.get('/music', router)
+
+
+
 // !   NICHT BEARBEITETE ROUTES BELOW
-
-app.get('/med_player', (req, res) => {
-    res.render("pages/meditation_player");
-})
-
-app.get('/music', (req, res) => {
-    res.render("pages/music");
-})
 
 
 app.get('/reminders', (req, res) => {

@@ -54,5 +54,13 @@ router.get('/meditation', ensureAuth,  (req, res) => {
 })
 
 
+router.get('/med_player', ensureAuth,  (req, res) => {
+    res.render("pages/meditation_player");
+})
+
+router.get('/music', ensureAuth,  (req, res) => {
+    res.render("pages/music");
+})
+
 
 module.exports = router;
