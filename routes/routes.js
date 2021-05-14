@@ -1,5 +1,6 @@
 const express = require('express');
 const dataItem = require('../models/data')
+const user = require('../models/user')
 const router = express.Router();
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
@@ -50,7 +51,12 @@ router.get('/home', ensureAuth, (req, res) => {
 
 
 router.get('/profile', ensureAuth, (req, res) => {
-    res.render('pages/profile')
+
+    console.log(req.user.googleId);
+    console.log(req.user.displayName);
+
+
+    res.render('pages/profile', {name: req.user.firstName})
     console.log("this is from LOGIN routes");
 
 })
