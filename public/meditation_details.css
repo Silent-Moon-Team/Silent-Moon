@@ -1,0 +1,84 @@
+/*====================
+    Global Styles
+======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*====================
+Meditation_details_Bild Styles
+======================*/
+.meditation_details_header{
+    background: url('https://images.unsplash.com/photo-1513097847644-f00cfe868607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=932&q=80') no-repeat center/ cover;
+    padding: 0px 0px 40% 0px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*====================
+Meditation_details_Überschrift_h1 Styles
+======================*/
+.meditation_details_h1{
+    padding: 10px 0px 10px 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A503D;
+}
+
+/*====================
+Meditation_details_h2 Styles
+======================*/
+.meditation_details_h2{
+    padding: 0px 0px 20px 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #A1A4B2;
+}
+
+/*====================
+Meditation_details_p Styles
+======================*/
+.meditation_details_p{
+    padding: 0px 0px 20px 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #A1A4B2;
+}
+
+/*====================
+Meditation_details_buttonconatiner
+======================*/
+.meditation_details_buttoncontainer{
+    padding-top: 30px;
+    display:flex;
+    justify-content:space-around;
+}
+
+/*====================
+Favorits & Listening conatiner
+======================*/
+.favorits_listening{
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #A1A4B2;
+}
+
+.meditation_detail_playlist h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3F414E;
+    padding-left: 5%;;
+    font-size:1.5em;
+}

@@ -20,7 +20,7 @@ Yoga_details_Bild Styles
 
 .yoga_details_header{
 background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1031&q=80') no-repeat center/ cover;
-padding: 0px 0px 70vh 0px;
+padding: 0px 0px 60vh 0px;
 text-align: center;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
@@ -42,7 +42,7 @@ Yoga_details_h2 Styles
 .yoga_details_h2{
     padding: 0px 0px 20px 50px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
     color: #A1A4B2;
 }
