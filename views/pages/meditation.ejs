@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditation</title>
+    <link rel="stylesheet" href="./meditation_details.css">
 </head>
+
 <body>
-    <h1>Meditation page</h1>
-    <%- include('./partials/nav.ejs')  %> 
+    <!--BILD-->
+    <header class="meditation_details_header">
+        <!--Buttons auf dem Bild-->
+        <div class="meditation_details_buttoncontainer">
+            <button class="btn_goback">Button</button>
+            <button class="btn_fav">Button</button>
+            <button class="btn_download">Button</button>
+        </div>
+    </header>
+
+    <!--Text-->
+    <section>
+        <h1 class="meditation_details_h1">Happy Morning</h1>
+        <h2 class="meditation_details_h2">COURSE</h2>
+        <p class="meditation_details_p">Ease the mind into a restful night`s sleep with<br>these deep, amblent tones.
+        </p>
+    </section>
+
+    <!--Favorits & Listening-->
+    <section class="favorits_listening">
+        <div class="favorits">
+            <p>Favorits</p>
+        </div>
+        <div class="Listening">
+            <p>Listening</p>
+        </div>
+    </section>
+
+    <section class="meditation_detail_playlist">
+        <h1>Playlist</h1>
+
+
+    </section>
+    <%- include('./partials/nav.ejs') %>
 
 </body>
+
 </html>
