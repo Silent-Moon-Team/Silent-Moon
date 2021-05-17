@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport')
+const dataItem = require('./models/data');
+
 // const cookieSession = require('cookie-session')
 const session = require('express-session');
 
@@ -21,7 +23,6 @@ const app = express()
 connectDB()
 
 
-
 const PORT = process.env.PORT || 5000
 
 // static foldees -   css...
@@ -35,8 +36,8 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    
-  }))
+
+}))
 
 // passport middleware
 app.use(passport.initialize())
@@ -46,6 +47,7 @@ app.use(passport.session())
 app.use(express.urlencoded({ extended: false }))
 // parse application/json
 app.use(express.json())
+
 
 // * ********************************
 // ******      ROUTINGS  *************
@@ -107,26 +109,19 @@ app.use('/yoga', router)
 // meditation   bla bla kA was hier sein soll, aber muss eingeloggt sein
 app.use('/meditation', router)
 
+
+app.use('/med_player', router)
+
+app.get('/music', router)
+
+app.get('/reminders', router)
+
+
+app.get('/yoga_details', router)
+
+
+
 // !   NICHT BEARBEITETE ROUTES BELOW
-
-app.get('/med_player', (req, res) => {
-    res.render("pages/meditation_player");
-})
-
-app.get('/music', (req, res) => {
-    res.render("pages/music");
-})
-
-
-app.get('/reminders', (req, res) => {
-    res.render("pages/reminders");
-})
-
-app.get('/yoga_details', (req, res) => {
-    res.render("pages/yoga_details");
-})
-
-
 
 //  NEEDED?
 app.get('/register', (req, res) => {
@@ -135,9 +130,8 @@ app.get('/register', (req, res) => {
 
 
 
-
 app.listen(PORT, () => {
-    console.log('listening at http:localhost:5000');
+    console.log(`listening at http:localhost:${PORT}`);
 })
 
 //Steffen war hier

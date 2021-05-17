@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga details</title>
+    <link rel="stylesheet" href="./yoga_details.css">
 </head>
+
 <body>
-    <h1>Yoga details page</h1>
-    <%- include('./partials/nav.ejs')  %> 
+    <!--BILD-->
+    <header class="yoga_details_header">
+        <!--Buttons auf dem Bild-->
+        <div class="yoga_details_buttoncontainer">
+            <button class="btn_goback">Button</button>
+            <button class="btn_fav">Button</button>
+            <button class="btn_download">Button</button>
+        </div>
+    </header>
+
+    <section>
+        <h1 class="yoga_details_h1">Healthy Back</h1>
+        <h2 class="yoga_details_h2">Beginner</h2>
+        <p class="yoga_details_p">Ease the mind into a restful night`s sleep with<br>these deep, amblent tones.</p>
+    </section>
+
+    <%- include('./partials/nav.ejs') %>
 
 </body>
+
 </html>
