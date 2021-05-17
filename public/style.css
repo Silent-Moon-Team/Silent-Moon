@@ -11,7 +11,7 @@ font-family: 'Source Sans Pro', sans-serif;
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .login-container {
@@ -100,7 +100,8 @@ font-family: 'Source Sans Pro', sans-serif;
 .container  {
     height: 10vh;
     width:500px;
-    border:1px green solid;
+    
+    font-family: 'Source Sans Pro', sans-serif;
 
     margin: 20px;
 }
@@ -117,16 +118,57 @@ font-family: 'Source Sans Pro', sans-serif;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid #777;
+    /* border: 1px solid #777; */
 }
+
 
 .container nav ul li{
     display: flex;
-    align-items: center;
+    flex-direction:column;
+    align-items: space-between;
 }
+
+.container nav ul li div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid blue; */
+}
+
+.container .nav_top{
+    height: 70%;
+    width: 70px;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+}
+.container .nav_bottom{
+    height: 25%;
+}
+
+.container nav ul li div img{
+    width: 20px;
+    /* border: 1px solid red; */
+    /* padding: 5px; */
+}
+
+.active .nav_top, .active li div img{
+    background-color: pink;
+
+}
+
 
 .container nav ul li a{
     text-decoration: none;
 
-    color: black;
+    color: grey;
+}
+
+.container nav .active .nav_bottom a{
+    color: pink;
+}
+
+.container nav .active .nav_top img{
+    color: white;
 }
