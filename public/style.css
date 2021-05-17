@@ -98,18 +98,31 @@ font-family: 'Source Sans Pro', sans-serif;
 ==========================*/ 
 
 .container  {
-    height: 5vh;
+    height: 10vh;
     width:500px;
     border:1px green solid;
+
+    margin: 20px;
+}
+
+.container nav{
+    height: 100%;
+
 }
 
 .container nav ul{
 
     list-style: none;
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
     border: 1px solid #777;
+}
+
+.container nav ul li{
+    display: flex;
+    align-items: center;
 }
 
 .container nav ul li a{
