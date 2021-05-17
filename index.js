@@ -1,41 +1,100 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const passport = require('passport')
+// const cookieSession = require('cookie-session')
+const session = require('express-session');
+
+const router = require('./routes/routes')
 
 const connectDB = require('./config/db')
 
 require('dotenv').config()
 
-// *  * * * * * * * *      connection DBRef
+// google passport config
+require('./config/passport')(passport)
+
+const app = express()
+
+// *  * * * * * * * *      connection DB
 //!    connection error - connection working on other db - see  .env
 //?   created new user   - admin, this solved the problem
 connectDB()
 
 
-const app = express()
-
 
 const PORT = process.env.PORT || 5000
+
+// static foldees -   css...
 app.use(express.static('public'))
+
+// ejs on:
 app.set('view engine', 'ejs')
+
+// Sessions
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    
+  }))
+
+// passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
+
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }))
 // parse application/json
 app.use(express.json())
-app.get('/', (req, res) => {
-    res.render("pages/main");
 
-})
+// * ********************************
+// ******      ROUTINGS  *************
+// * ********************************
 
-app.get('/login', (req, res) => {
-    res.render("pages/login");
-})
+
+
+// *****    Route to HOME - welcome page (no auth needed)
+
+app.use('/', router)
+
+// ******* created - commented direct route below:
+// app.get('/', (req, res) => {
+//     res.render("pages/main"); 
+// })
+
+// ----------------------------------------------------------------
+
+// ! *****    Route to HOME - welcome page (no auth yet)
+
+app.use('/home', router)
+
+// ******* created - commented direct route below:
+// app.get('/home', (req, res) => {
+//     res.render("pages/home");
+// })
+
+// ----------------------------------------------------------------
+
+// *****    Route to LOGIN PAGE - welcome page (no auth yet)
+app.use('/login', router)
+
+// ******* created - commented direct route below:
+// app.get('/login', (req, res) => {
+//     res.render("pages/login");
+// })
+
+// ----------------------------------------------------------------
+
+
+
+
+
+
 
 app.get('/register', (req, res) => {
     res.render("pages/register");
 })
 
-app.get('/home', (req, res) => {
-    res.render("pages/home");
-})
 
 app.get('/meditation', (req, res) => {
     res.render("pages/meditation");
