@@ -92,3 +92,28 @@ font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
 
+
+/*=========================
+    NAVIGATION STYLE
+==========================*/ 
+
+.container  {
+    height: 5vh;
+    width:500px;
+    border:1px green solid;
+}
+
+.container nav ul{
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #777;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+
+    color: black;
+}

@@ -58,7 +58,7 @@ router.get('/yoga', (req, res) => {
 // ?route  GET /
 
 router.get('/home', ensureAuth, (req, res) => {
-    res.render('pages/home')
+    res.render('pages/home', {name: req.user.firstName})
     console.log("this is from home routes");
 
 })
