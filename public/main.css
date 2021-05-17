@@ -1,0 +1,22 @@
+/*====================
+    Global Styles
+======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*====================
+    mainpage Styles
+======================*/
+body{
+    margin:0;
+}

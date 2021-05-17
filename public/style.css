@@ -2,10 +2,11 @@
     Global Styles
 ======================*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Pattaya', sans-serif;
 */
 
 *{
@@ -25,7 +26,7 @@ font-family: 'Source Sans Pro', sans-serif;
 ======================*/
 
 .main_header{
-    margin: 0px 50px;
+    margin: 0px;
     padding: 0px 0px 85vh 0px;
     text-align: center;
     background: url('https://images.unsplash.com/photo-1576094168768-4078c686a1c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80') no-repeat center/ cover;
@@ -40,7 +41,6 @@ font-family: 'Source Sans Pro', sans-serif;
 .main_main{
     text-align: center;
 }
-
 /*=========================
     MainPage MAIN Styles
 ==========================*/ 
@@ -55,7 +55,7 @@ font-family: 'Source Sans Pro', sans-serif;
     padding-top: 30px;
     font-family: 'Roboto', sans-serif;
     color: #A1A4B2;
-    width: 18%;
+    width: 28%;
     margin: auto;
 }
 
@@ -91,6 +91,7 @@ font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 
 /*=========================
@@ -172,3 +173,51 @@ font-family: 'Source Sans Pro', sans-serif;
 .container nav .active .nav_top img{
     color: white;
 }
+=======
+/*=========================
+    MainPage Mobile-Version Styles
+==========================*/
+@media (max-width: 414px) { 
+    .main_header{
+        padding: 0px 0px 50vh 0px;
+    }
+    .main_header h1{
+        font-size: 30px;
+        color:#4e5058;
+    }
+    .main_main h2{
+        font-size: 30px;
+        color:#4e5058;
+    }
+    .main_main p{
+        width: 60%;
+        font-size: 13px;
+    }
+    .main_footer a button{
+        padding: 10px 70px;
+    }
+ .main_footer p{
+    font-size:10px;
+ }
+} 
+@media (max-width: 1200px) {
+    .main_main p{
+        width: 40%;
+    }
+ }
+ @media (max-width: 1000px) {
+    .main_main p{
+        width: 47%;
+    }
+ }
+ @media (max-width: 800px) {
+    .main_main p{
+        width: 50%;
+    }
+ }
+ @media (max-width: 600px) {
+    .main_main p{
+        width: 70%;
+    }
+ }
+>>>>>>> 85d6f485ea92c9301e33862728c6cb94e6655852
