@@ -62,8 +62,37 @@ Yoga_details_p Styles
 Yoga_details_buttonconatiner
 ======================*/
 .yoga_details_buttoncontainer{
-    padding-top: 50px;
+    padding: 50px 10px;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
+/*=========================
+    yoga-details Mobile-Version Styles
+==========================*/
+@media (max-width: 414px) { 
+    .yoga_details_header{
+        padding: 0px 0px 50vh 0px;
+        
+        }
+        .yoga_details_h1,.yoga_details_h2{
+            padding: 50px 0px 0px 10px;
+        }
+        .yoga_details_h2{
+            padding: 5px 0px 10px 10px;
+        }
+        .yoga_details_p{
+            padding: 5px 0px 10px 10px;
+        }
+    }
+    @media (max-width: 800px) { 
+            .yoga_details_h1,.yoga_details_h2{
+                padding: 50px 0px 0px 20px;
+            }
+            .yoga_details_h2{
+                padding: 5px 0px 10px 20px;
+            }
+            .yoga_details_p{
+                padding: 5px 0px 10px 20px;
+            }
+        }

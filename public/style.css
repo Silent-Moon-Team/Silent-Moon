@@ -2,10 +2,11 @@
     Global Styles
 ======================*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Pattaya', sans-serif;
 */
 
 *{
@@ -93,25 +94,46 @@ font-family: 'Source Sans Pro', sans-serif;
 /*=========================
     MainPage Mobile-Version Styles
 ==========================*/
-@media (max-width: 500px) { 
+@media (max-width: 414px) { 
     .main_header{
         padding: 0px 0px 50vh 0px;
- 
     }
     .main_header h1{
         font-size: 30px;
+        color:#4e5058;
     }
     .main_main h2{
         font-size: 30px;
+        color:#4e5058;
     }
     .main_main p{
         width: 60%;
         font-size: 13px;
     }
     .main_footer a button{
-        padding: 10px 80px;
+        padding: 10px 70px;
     }
- }
  .main_footer p{
     font-size:10px;
-}
+ }
+} 
+@media (max-width: 1200px) {
+    .main_main p{
+        width: 40%;
+    }
+ }
+ @media (max-width: 1000px) {
+    .main_main p{
+        width: 47%;
+    }
+ }
+ @media (max-width: 800px) {
+    .main_main p{
+        width: 50%;
+    }
+ }
+ @media (max-width: 600px) {
+    .main_main p{
+        width: 70%;
+    }
+ }
