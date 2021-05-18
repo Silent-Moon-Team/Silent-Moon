@@ -78,6 +78,10 @@ body{
     border: 5px solid #A1A4B2;
 }
 
+.big_button_pause{
+    display:none;
+}
+
 .player_main_controls .big_button_pause i{
     padding: 0;
     color: #fff;
@@ -89,3 +93,27 @@ body{
     color: #fff;
     font-size: 38px;
 }
+
+/*=========================
+    Slider Styles
+==========================*/
+
+.slider {
+    margin-top: 10%;
+    -webkit-appearance: none;
+    width: 60%;
+    height: 5px;
+    background: #A1A4B2;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 15px;
+    background: #8E9775;
+    cursor: pointer;
+  }

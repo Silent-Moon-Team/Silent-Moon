@@ -12,16 +12,17 @@
 </head>
 
 <body>
+    <header class="player_header">
+        <button><i class="las la-times"></i></button>
+        <div class="player_header_two_buttons">
+            <button><i class="las la-heart"></i></button>
+            <button><i class="las la-cloud-download-alt"></i></button>
+        </div>
+    </header>
     <main class="player_main">
-        <h2><%= data.track.name %> </h2>  
-        <h3>Track NUmmer : <%= counter %></h3>
-        <audio >
-            <source src=<%=data.track.preview_url %>>
-        </audio>
-
-        <a href=<%=`/med_player/${counter+1}`%>>next track</a>
-        <a href=<%=`/med_player/${counter-1}`%>>previos track</a>
-
+        <h2>
+            <%= data.track.name %>
+        </h2>
         <section class="player_main_controls">
 
 
@@ -29,12 +30,12 @@
                         class="las la-undo-alt"></i></a></button>
 
 
-            <button class="big_button_play" onclick="document.getElementById('player').play()">
+            <button class="big_button_play" id="play_button" onclick="document.getElementById('player').play()">
                 <i class="las la-play"></i>
             </button>
 
 
-            <button class="big_button_pause" onclick="document.getElementById('player').pause()">
+            <button class="big_button_pause" id="pause_button" onclick="document.getElementById('player').pause()">
                 <i class="las la-pause"></i>
             </button>
 
@@ -42,6 +43,9 @@
             <button class="skip_button"><a href=<%=`/med_player/${counter+1}` %> ><i
                         class="las la-redo-alt"></i></a></button>
 
+            <div>
+                <input type="range" name="" id="timeline" min="0" max="100" value="0" class="slider">
+            </div>
 
             <audio id="player">
                 <source src=<%=data.track.preview_url %>>
