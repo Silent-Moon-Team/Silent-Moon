@@ -1,0 +1,76 @@
+/*====================
+    Global Styles
+======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*====================
+Profile header Silent Moon Style
+======================*/
+.profile_header h1{
+    text-align: center;
+    color:#4A503D;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    padding: 20px 0px 30px 0px;
+}
+
+/*====================
+Profile_section_Bild & Text "hello"  Style
+======================*/
+.profile_section{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 50px;
+}
+
+/*====================
+Profile_section_Bild Style
+======================*/
+.profile_foto{
+    padding-right: 50px; 
+}
+
+/*====================
+Profile_section_searchbar Style
+======================*/
+.searchbar{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/*====================
+Profile_section_fav.sessions Style
+======================*/
+.profil_sessions{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#4A503D;
+    padding-bottom: 30px;
+}
+
+/*====================
+Profile_fav.session_Pics Style
+======================*/
+.fav_sessions_pics{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*====================
+Profile_fav.session_pics bildunterschrift
+======================*/
+.bild_p{
+    display: flex;
+    padding-bottom: 30px;
+}
+

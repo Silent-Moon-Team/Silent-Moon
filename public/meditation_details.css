@@ -60,9 +60,9 @@ Meditation_details_p Styles
 Meditation_details_buttonconatiner
 ======================*/
 .meditation_details_buttoncontainer{
-    padding-top: 30px;
+    padding: 50px 10px;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 /*====================
