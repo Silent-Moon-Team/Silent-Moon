@@ -12,7 +12,7 @@ font-family: 'Pattaya', sans-serif;
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .login-container {
@@ -91,6 +91,172 @@ font-family: 'Pattaya', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
+
+
+/*=========================
+    NAVIGATION STYLE  VERSION1  -  not perfect, redoing below!
+==========================*/ 
+
+/* .container  {
+    height: 10vh;
+    width:500px;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+
+    margin: 20px;
+}
+
+.container nav{
+    height: 100%;
+
+}
+
+.container nav ul{
+
+    list-style: none;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container nav ul li{
+    display: flex;
+    flex-direction:column;
+    align-items: space-between;
+}
+
+.container nav ul li div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .nav_top{
+    height: 70%;
+    width: 70px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container .nav_bottom{
+    height: 25%;
+}
+
+.container nav ul li div img{
+    width: 20px;
+    
+}
+
+.active .nav_top, .active li div img{
+    background-color: pink;
+
+}
+
+
+.container nav ul li a{
+    text-decoration: none;
+
+    color: grey;
+}
+
+.container nav .active .nav_bottom a{
+    color: pink;
+}
+
+.container nav .active .nav_top img{
+    color: white;
+} */
+
+
+
+/*=========================
+    NAVIGATION STYLE  VERSION2  
+==========================*/ 
+
+.container  {
+    height: 10vh;
+    width:500px;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+
+    margin: 20px;
+}
+
+.container nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container nav a{
+    text-decoration: none;
+}
+
+
+.container .btn_wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+
+    transition: all .7s;
+
+
+    /* border: green 1px solid; */
+
+}
+
+.container .btn_wrapper:hover .nav_top{
+    box-shadow: #F6BFCA 0px 3px 8px;
+    transition: all .7s ease;
+}
+
+
+
+.container nav .btn_wrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border:1px solid blue; */
+}
+
+.container .nav_top{
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+}
+.container .nav_bottom{
+    height: 25%;
+}
+
+
+.active .nav_top, .active div img{
+    background-color: pink;
+
+}
+
+.container nav .btn_wrapper .nav_bottom p{
+    text-decoration: none;
+
+    color: grey;
+}
+
+.container nav .active .nav_bottom p{
+    color: pink;
+}
+
+.container nav .active .nav_top img{
+    color: white;
+}
+
+
 /*=========================
     MainPage Mobile-Version Styles
 ==========================*/
