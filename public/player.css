@@ -1,0 +1,91 @@
+/*=========================
+    Global Styles
+==========================*/
+
+body{
+    background: #FAF2DA;
+}
+
+/*=========================
+    PlayerHeader Styles
+==========================*/
+
+.player_header{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+
+.player_header i{
+    font-size: 20px;
+}
+
+.player_header button{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+.player_header_two_buttons button{
+    background: rgba(226,143,131, 0.5);
+}
+
+.player_header_two_buttons i{
+    color: #FAF2DA;
+}
+
+/*=========================
+    PlayerMain Styles
+==========================*/
+
+.player_main{
+    padding-top: 35vh;
+    text-align: center;
+}
+
+.player_main h2{
+    margin: 0;
+    font-size: 36px;
+}
+
+/*=========================
+    PlayerControls Styles
+==========================*/
+.player_main_controls {
+    margin-top: 100px;
+}
+
+.player_main_controls i{
+    padding: 0px 10px;
+    font-size: 30px;
+}
+
+.player_main_controls .skip_button{
+    background: none;
+    border: none;
+}
+
+.player_main_controls .skip_button a{
+    color: #000;
+}
+
+.player_main_controls .big_button_play, .big_button_pause{
+    width: 100px;
+    height: 100px;
+    border:none;
+    border-radius: 50%;
+    background:#8E9775;
+    border: 5px solid #A1A4B2;
+}
+
+.player_main_controls .big_button_pause i{
+    padding: 0;
+    color: #fff;
+    font-size: 38px;
+}
+
+.player_main_controls .big_button_play i{
+    padding: 0;
+    color: #fff;
+    font-size: 38px;
+}

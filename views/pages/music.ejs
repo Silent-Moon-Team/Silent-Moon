@@ -8,5 +8,20 @@
 </head>
 <body>
     <h1>music page</h1>
+    <% data.forEach(element=> { %>
+
+        <a href=<%=`/med_player/${data.indexOf(element)}`%>>
+
+
+            <h2>
+                <%= element.track.name %>
+            </h2>
+            <audio controls>
+                <source src=<%=element.track.preview_url %>>
+            </audio>
+
+        </a>
+
+        <% }) %>
 </body>
 </html>
