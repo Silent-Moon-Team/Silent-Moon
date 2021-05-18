@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="./profile.css">
 </head>
+
 <body>
-    <h1>Profile page</h1>
-    <h2>Hello <%= `${name}` %> </h2>
-    
+    <!--Silent Moon header-->
+    <header class="profile_header">
+        <h1>Silent Moon</h1>
+    </header>
+
+    <!--Profil Bild-->
+    <section class="profile_section">
+        <div class="profile_foto">
+            <img src="images/profilepic.png" alt="profile image">
+        </div>
+
+        <!--Hellotext-->
+        <div class="profile_hello">
+            <h2>Hello <%= `${name}` %>
+            </h2>
+        </div>
+    </section>
+
+    <!--Searchbar-->
+    <div class="searchbar">
+        <input type="text" class="searchTerm" placeholder="">
+        <button type="submit" class="searchButton">
+
+        </button>
+    </div>
+
+
+    <!--Profil Yoga sessions Bilder-->
+    <section class="profil_sessions">
+        <h2>Favourite Yoga Sessions</h2>
+    </section>
+
+    <div class="fav_sessions_pics">
+        <figure>
+            <img src="images/fatburner.png">
+            <figcaption>Fatburner</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/recovery.png">
+            <figcaption>Recovery</figcaption>
+            <div class="bild_p">
+                <p>Expert</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/back.png">
+            <figcaption>Back</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+    </div>
+
+
+    <!--Profil Meditation sessions Bilder-->
+    <section class="profil_sessions">
+        <h2>Favourite Meditation Sessions</h2>
+    </section>
+
+    <div class="fav_sessions_pics">
+        <figure>
+            <img src="images/innerbalance.png">
+            <figcaption>Inner Balance</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/selfforgiveness.png">
+            <figcaption>Self-forgiveness</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/sleep.png">
+            <figcaption>Sleep</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+    </div>
+
+
+
+
+
+
 
     <li><a href="/auth/logout">LOG OUT</a></li>
 
-    <%- include('./partials/nav.ejs')  %> 
+    <%- include('./partials/nav.ejs') %>
 
 </body>
+
 </html>
