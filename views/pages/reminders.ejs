@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reminders</title>
+    <link rel="stylesheet" href="./reminder.css">
 </head>
+
 <body>
-    <h1>reminders page</h1>
+    <header class="reminder_header">
+        <h1>Silent Moon</h1>
+    </header>
+    <section class="reminder_time-meditate">
+        <h1 class="reminder_time-meditate-h1">What time would you like to meditate?</h1>
+        <p class="reminder_time-meditate-p">Any time you can choose but We recommend first thing in th morning.</p>
+        <form action="">
+            <input type="time" data-role="timepicker" class="reminder_time-meditate-input">
+        </form>
+    </section>
+    <section class="reminder_day-meditate">
+        <h1>Which day would you like to meditate?</h1>
+        <p class="reminder_day-meditate-p">Everyday is best, but we recommend picking
+            at least five.</p>
+        <div class="reminder-daysname-container">
+            <div class="reminder-daysname">SU</div>
+            <div class="reminder-daysname">M</div>
+            <div class="reminder-daysname">T</div>
+            <div class="reminder-daysname">W</div>
+            <div class="reminder-daysname">TH</div>
+            <div class="reminder-daysname">F</div>
+            <div class="reminder-daysname">S</div>
+        </div>
+    </section>
+
 </body>
+
 </html>

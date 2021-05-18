@@ -60,7 +60,7 @@ Meditation_details_p Styles
 Meditation_details_buttonconatiner
 ======================*/
 .meditation_details_buttoncontainer{
-    padding: 50px 10px;
+    padding: 30px 10px;
     display:flex;
     justify-content:space-between;
 }
@@ -82,3 +82,17 @@ Favorits & Listening conatiner
     padding-left: 5%;;
     font-size:1.5em;
 }
+/*=========================
+   meditation Mobile-Version Styles
+==========================*/
+@media (max-width: 414px) { 
+    .meditation_details_h1{
+        padding: 10px 0px 0px 10px;
+    }
+    .meditation_details_h2{
+        padding: 0px 0px 0px 10px;
+    }
+    .meditation_details_p{
+        padding: 5px 0px 0px 10px;
+    }
+    }

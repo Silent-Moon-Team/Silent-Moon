@@ -1,0 +1,61 @@
+/*====================
+    Global Styles
+======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+/*====================
+    reminder-Time-day Styles
+======================*/
+.reminder_header{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top:10vh;
+}
+.reminder_time-meditate,.reminder_day-meditate{
+    padding-left: 30px;
+    padding-top:7vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.reminder_time-meditate-p,.reminder_day-meditate-p{
+    color:#A1A4B2;
+    padding-top:3vh;
+}
+.reminder_time-meditate-input{
+    width:30vw;
+    text-align: center;
+}
+/*====================
+    reminder-daysname Styles
+======================*/
+.reminder-daysname-container{
+    display: flex;
+    justify-content: space-evenly;
+    width:50vw;
+}
+.reminder-daysname{
+    border-radius: 50%;
+    border: solid black 1px;
+    padding: 10px 15px;
+    font-size:10px;
+}
+
+/*====================
+    reminder-daysname-container Styles
+======================*/
+.reminder-daysname-container{
+    margin-top:3vh;
+}
