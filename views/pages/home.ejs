@@ -15,9 +15,13 @@
         <h2>Good morning <%= `${name}` %></h2>
         <p>We hope you habe a good day</p>
     </header>
+
+    <!--healthy Back & Meditation container-->
     <main class="home_main">
-        <section>
-            <div>
+        <section class="main_container">
+
+            <!--healthy back-->
+            <div class="home_firstpic">
                 <h2>Healthy Back</h2>
                 <p>Beginner</p>
                 <div>
@@ -25,7 +29,9 @@
                     <a href="">Start</a>
                 </div>
             </div>
-            <div>
+
+            <!--Meditation-->
+            <div class="home_secondpic">
                 <h2>Meditation</h2>
                 <p>Beginner</p>
                 <div>
@@ -34,7 +40,101 @@
                 </div>
             </div>
         </section>
+
+        <!--searchbar-->
+        <section>
+            <div class="home_searchbar">
+            <input type="text" class="searchTerm" placeholder="">
+            <button type="submit" class="searchButton">
+
+            </button>
+            </div>
+        </section>
+        <!--Ende searchbar-->
+
+        <!--Recomended Yoga-->
+        <section class="recomended_yoga">
+        <h1>Recomended Yoga for you</h1>
+        </section>
+
+
+    <!--Recomended Yoga Bilder & Text-->
+    <div class="recomended_yoga_pics">
+        <figure>
+            <img src="images/yogasession.png">
+            <figcaption>Fatburner</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/back.png">
+            <figcaption>Recovery</figcaption>
+            <div class="bild_p">
+                <p>Expert</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/innerbalance.png">
+            <figcaption>Back</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+    </div>
+
+
+    <!--Recomended Meditation-->
+        <section class="recomended_meditation">
+        <h1>Recomended Meditation for you</h1>
+        </section>
+
+    
+    <!--Recomended meditation Bilder & Text-->
+    <div class="recomended_meditation_pics">
+        <figure>
+            <img src="images/sleep.png">
+            <figcaption>Focus</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/refresh.png">
+            <figcaption>Refresh</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="images/Recovery.png">
+            <figcaption>Experience</figcaption>
+            <div class="bild_p">
+                <p>Beginner</p>
+                <p>3-10min</p>
+            </div>
+        </figure>
+    </div>
+
+
+
     </main>
+
+
+
+
+
+
+    
 
     <%- include('./partials/nav.ejs') %>
 </body>
