@@ -19,9 +19,9 @@ Profile header Silent Moon Style
 ======================*/
 .profile_header h1{
     text-align: center;
-    color:#4A503D;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:16px;
+    font-size:1.5em;
+    color: #4A503D;
     padding: 20px 0px 30px 0px;
 }
 
@@ -30,8 +30,10 @@ Profile_section_Bild & Text "hello"  Style
 ======================*/
 .profile_section{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-bottom: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A503D;
 }
 
 /*====================
@@ -69,8 +71,17 @@ Profile_fav.session_Pics Style
 /*====================
 Profile_fav.session_pics bildunterschrift
 ======================*/
+figcaption{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#4A503D;
+    font-weight:bold;
+
+}
+
 .bild_p{
     display: flex;
     padding-bottom: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#A1A4B2;
 }
 
