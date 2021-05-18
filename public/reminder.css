@@ -15,6 +15,8 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 body{
     margin:0;
+    background-color: #FAF2DA;
+    ;
 }
 
 /*====================
@@ -24,38 +26,36 @@ body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top:10vh;
+    color:#3F414E;
 }
 .reminder_time-meditate,.reminder_day-meditate{
     padding-left: 30px;
     padding-top:7vh;
     font-family: 'Source Sans Pro', sans-serif;
+    color:#3F414E;
 }
 .reminder_time-meditate-p,.reminder_day-meditate-p{
     color:#A1A4B2;
-    padding-top:3vh;
+    padding:3vh 0;
 }
 .reminder_time-meditate-input{
-    width:30vw;
     text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #A1A4B2;
 }
 /*====================
     reminder-daysname Styles
 ======================*/
 .reminder-daysname-container{
-    display: flex;
-    justify-content: space-evenly;
-    width:50vw;
+    margin-top:3vh;
+    width:40vw;
 }
 .reminder-daysname{
     border-radius: 50%;
-    border: solid black 1px;
+    border: solid #E5E5E5 1px;
     padding: 10px 15px;
     font-size:10px;
-}
-
-/*====================
-    reminder-daysname-container Styles
-======================*/
-.reminder-daysname-container{
-    margin-top:3vh;
+    background-color: #E5E5E5;
+    margin-left: -18px;
 }

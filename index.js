@@ -127,7 +127,10 @@ app.get('/main', router)
 app.get('/register', (req, res) => {
     res.render("pages/register");
 })
-
+app.post('/uhr', (req, res) => {
+    console.log("reminder")
+    res.redirect('/reminder')
+})
 
 
 app.listen(PORT, () => {
