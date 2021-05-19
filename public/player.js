@@ -27,7 +27,7 @@ pauseButton.addEventListener('click', () => {
     playButton.style.display = 'inline-block';
 })
 
-iconHearth.addEventListener('click', () => {
+iconHeart.addEventListener('click', () => {
     iconHearth.style.color = 'rgba(226,143,131, 0.8)';
 })
 
