@@ -30,99 +30,44 @@
         <h1>Which day would you like to meditate?</h1>
         <p class="reminder_day-meditate-p">Everyday is best, but we recommend picking
             at least five.</p>
-        <!-- <div class="reminder-daysname-container" id="reminder-daysname-container" onclick="changeColor()">
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="#" class="reminder-daysname-a" id="reminder-daysname-a">SU</a>
+        <div class="reminder-daysname-checkbox" onclick="changeColor()">
+            <div class="reminder-daysname" id="myCheck">
+                SU
             </div>
-           <div class="reminder-daysname" id="reminder-daysname">
-                <a href="#" class="reminder-daysname-a" id="reminder-daysname-a">M</a>
+            <div class="reminder-daysname2" id="myCheck2">
+                M
             </div>
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">T</a>
+            <div class="reminder-daysname3" id="myCheck3">
+                T
             </div>
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">W</a>
+            <div class="reminder-daysname4" id="myCheck4">
+                W
             </div>
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">TH</a>
+            <div class="reminder-daysname5" id="myCheck5">
+                TH
             </div>
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">F</a>
+            <div class="reminder-daysname6" id="myCheck6">
+                F
             </div>
-            <div class="reminder-daysname" id="reminder-daysname">
-                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">M</a>
+            <div class="reminder-daysname7" id="myCheck7">
+                M
             </div>
-        </div> -->
-        <form action="" target="_blank" class="reminder-daysname-container" onclick="changeColor()">
-            <div class="reminder-daysname-checkbox">
-                <div>
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">SU</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck2">
-<<<<<<< HEAD
-                    <label class="reminder-daysname2" id="reminder-daysname">M</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck3">
-                    <label class="reminder-daysname3" id="reminder-daysname">T</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck4">
-                    <label class="reminder-daysname4" id="reminder-daysname">W</label>
-=======
-                    <label class="reminder-daysname">M</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">T</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">W</label>
->>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
-                </div>
-                <div>
-<<<<<<< HEAD
-                    <input type="checkbox" name="days" id="myCheck5">
-                    <label class="reminder-daysname5" id="reminder-daysname">TH</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck6">
-                    <label class="reminder-daysname6" id="reminder-daysname">F</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck7">
-                    <label class="reminder-daysname7" id="reminder-daysname">S</label>
-=======
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">TH</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">F</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname">S</label>
->>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
-                </div>
-            </div>
-        </form>
+        </div>
+
     </section>
     <section>
         <a href="/profile" class="reminder-save-Btn">SAVE</a><br>
         <a href="/profile" class="reminder-ignore-Btn">NO,THANKS</a>
     </section>
+    <!-- -------------------------------------------------------------- -->
+    <!-- ---------------------Javascript------------------------------- -->
     <script>
 
         const myCheck = document.getElementById('myCheck')
         myCheck.addEventListener('click', () => {
-            if (myCheck.checked) {
+            if (myCheck) {
                 document.querySelector('.reminder-daysname').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname').style.color = '#FAF2DA'
-<<<<<<< HEAD
             } else {
                 document.querySelector('.reminder-daysname').style.backgroundColor = '#E5E5E5'
                 document.querySelector('.reminder-daysname').style.color = '#3F414E'
@@ -130,7 +75,7 @@
         })
         const myCheck2 = document.getElementById('myCheck2')
         myCheck2.addEventListener('click', () => {
-            if (myCheck2.checked) {
+            if (myCheck2) {
                 document.querySelector('.reminder-daysname2').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname2').style.color = '#FAF2DA'
             } else {
@@ -140,7 +85,7 @@
         })
         const myCheck3 = document.getElementById('myCheck3')
         myCheck3.addEventListener('click', () => {
-            if (myCheck3.checked) {
+            if (myCheck3) {
                 document.querySelector('.reminder-daysname3').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname3').style.color = '#FAF2DA'
             } else {
@@ -150,7 +95,7 @@
         })
         const myCheck4 = document.getElementById('myCheck4')
         myCheck4.addEventListener('click', () => {
-            if (myCheck4.checked) {
+            if (myCheck4) {
                 document.querySelector('.reminder-daysname4').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname4').style.color = '#FAF2DA'
             } else {
@@ -160,7 +105,7 @@
         })
         const myCheck5 = document.getElementById('myCheck5')
         myCheck5.addEventListener('click', () => {
-            if (myCheck5.checked) {
+            if (myCheck5) {
                 document.querySelector('.reminder-daysname5').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname5').style.color = '#FAF2DA'
             } else {
@@ -170,22 +115,17 @@
         })
         const myCheck6 = document.getElementById('myCheck6')
         myCheck6.addEventListener('click', () => {
-            if (myCheck6.checked) {
+            if (myCheck6) {
                 document.querySelector('.reminder-daysname6').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname6').style.color = '#FAF2DA'
             } else {
                 document.querySelector('.reminder-daysname6').style.backgroundColor = '#E5E5E5'
                 document.querySelector('.reminder-daysname6').style.color = '#3F414E'
-=======
-            } else {
-                document.querySelector('.reminder-daysname').style.backgroundColor = '#E5E5E5'
-                document.querySelector('.reminder-daysname').style.color = '#3F414E'
->>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
             }
         })
         const myCheck7 = document.getElementById('myCheck7')
         myCheck7.addEventListener('click', () => {
-            if (myCheck7.checked) {
+            if (myCheck7) {
                 document.querySelector('.reminder-daysname7').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname7').style.color = '#FAF2DA'
             } else {
