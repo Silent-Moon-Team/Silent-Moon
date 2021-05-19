@@ -13,16 +13,17 @@
 
 <body>
     <header class="player_header">
-        <button><i class="las la-times"></i></button>
+        <a href="/music"><button><i class="las la-times"></i></button></a>
         <div class="player_header_two_buttons">
-            <button><i class="las la-heart"></i></button>
-            <button><i class="las la-cloud-download-alt"></i></button>
+            <button id="icon_heart"><i class="las la-heart"></i></button>
+            <button id="icon_download"><i class="las la-cloud-download-alt"></i></button>
         </div>
     </header>
     <main class="player_main">
         <h2>
             <%= data.track.name %>
         </h2>
+        <p>Good Vibes</p>
         <section class="player_main_controls">
 
 
