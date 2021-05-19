@@ -38,41 +38,121 @@ body{
     color:#A1A4B2;
     padding:3vh 0;
 }
-.reminder_time-meditate-input{
+
+/*====================
+    reminder-daysname-input:time Styles
+======================*/
+form{
+    max-width:220px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3F414E;
+    margin:0 8vw;
+    
+ }
+ 
+ .time-picker{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    transition:all .4s ease;
+    height:0;
+    overflow:hidden;
+ }
+    .time-picker,.set-time{
+       display:flex;
+       justify-content:center;
+       margin-bottom:45px;
+     }
+    .label{
+          width:60px;
+          margin:10px 5px;
+          text-align:center;
+          line-height:34px;
+          display:inline-style;
+    }
+          .label,   a{
+             display:block;
+             border:1px solid #DDDDDD;
+             cursor:pointer;
+             font-size:28px;
+             font-weight:bold;
+             border-radius:3px;
+          }
+             .label:hover,
+             .label:active{
+                background-color:#A1A4B2;
+                color:#FFFFFF;
+             }
+    
+             .label, .set{
+             text-align:center;
+             box-sizing:border-box;
+             width:100%;
+             height:40px;
+             line-height:34px;
+             font-size:20px;
+             font-weight:bold;
+             border:transparent;
+          }
+       
+    #submitTime{
+       text-align:center;
+       line-height:34px;
+       border:1px solid #DDDDDD;
+       width:10vw;
+       margin:5vh 0;
+       border-radius:5px;
+       cursor:pointer;
+       text-transform:uppercase;
+       font-weight:bold;
+       font-size:.7em;
+    }
+  
+ #timePicker{
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px;
     border-radius: 10px;
     border: 2px solid #A1A4B2;
-}
+    color: #3F414E;
+    background-color:#FCFCFC;
+ }
+ .time-picker.open{
+    border:2px solid #A1A4B2;
+    border-radius: 10px;
+    padding:10px;
+    transition:all .5s ease;
+    height:27vh;
+    width: 11.5vw;
+    background-color:#FCFCFC;
+ }
 /*====================
     reminder-daysname-checkbox Styles
 ======================*/
 .reminder-daysname-container{
     margin-top:3vh;
-    width:50vw;
+    margin-left: 0;
+    padding-left: 0;
 }
-.reminder-daysname{
+.reminder-daysname,.reminder-daysname2,.reminder-daysname3,.reminder-daysname4,.reminder-daysname5,.reminder-daysname6,.reminder-daysname7{
     border-radius: 50%;
     border: solid #E5E5E5 1px;
     padding: 10px 15px;
     font-size:10px;
-    background-color: #E5E5E5;
+    background-color: #FCFCFC;
+    color: #3F414E;
 }
 .reminder-daysname-checkbox{
     margin:6vh 0;
     display: flex;
-    justify-content:space-around;
-    width: 30vw;
+    justify-content:space-evenly;
+    width: 40vw;
 }
-.reminder-daysname-checkbox2{
-    margin:6vh 5vw;
-    display: flex;
-    justify-content:space-around;
-    width: 20vw;
-}
+/*====================
+    reminder-daysname-save&ignore Styles
+======================*/
 .reminder-save-Btn{
     width:30vw;
-    margin:5vh 35vw;
+    margin:5vh 40vw;
     padding: 2vh 0;
     border: 1px solid #E28F83;
     border-radius: 38px;
@@ -80,16 +160,18 @@ body{
     color:#FAF2DA;
     font-family: 'Source Sans Pro', sans-serif;
     font-size:1em;
+    text-align: center;
+    text-decoration: none;
 }
 .reminder-ignore-Btn{
     text-decoration: none;
     color: #E28F83;
     text-align: center;
-    margin:1vh 46vw;
+    margin:0 50vw;
     letter-spacing: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
-}
+} 
 /*====================================================
     reminder-daysname MEDIA-QUERIES-Mobile-Version
 ======================================================*/
@@ -116,28 +198,39 @@ body{
     padding: 5px 8px;
     font-size:7px;
 }
-    .reminder_time-meditate-input{
-        padding: 3px 5px;
+/* ///////////////////////////////////////// */
+    #submitTime{
+       width:20vw;
+       margin:5vh 8vw;
+       font-size:.8em;
     }
+  
+    #timePicker{
+    margin-left: 8vw;
+ }
+    .time-picker.open{
+    width: 42vw;
+    margin-left: 8vw;
+ }
     /* ///////////////////////////////////////// */
-    .reminder-daysname{
-        padding: 10px;
+    .reminder-daysname,.reminder-daysname2,.reminder-daysname3,.reminder-daysname4,.reminder-daysname5,.reminder-daysname6,.reminder-daysname7{
+        padding: 15px;
         font-size:10px;
+        margin-left: -20%;
+        margin-top: -10%;
     }
     .reminder-daysname-checkbox{
         margin:3vh 7vw;
-        width: 65vw;
-    }
-    .reminder-daysname-checkbox2{
-        margin:6vh 12vw;
-        width: 55vw;
+        width: 70vw;
     }
     /* ///////////////////////////////////////// */
     .reminder-save-Btn{
         width:40vw;
-        margin:3vh 28vw;
+        margin:10vh 28vw 0 28vw;
         padding: 1vh 0;
         font-size:.8em;
+        text-decoration: none;
+        text-align: center;
     }
     .reminder-ignore-Btn{
         margin:1vh 36vw;
