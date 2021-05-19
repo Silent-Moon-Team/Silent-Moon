@@ -177,15 +177,19 @@ font-family: 'Pattaya', sans-serif;
 
 .container  {
     height: 10vh;
-    width:500px;
+    width:100vw;
     
     font-family: 'Source Sans Pro', sans-serif;
 
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
 }
 
 .container nav{
     height: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 
@@ -280,6 +284,9 @@ font-family: 'Pattaya', sans-serif;
     }
  .main_footer p{
     font-size:10px;
+ }
+ .container{
+     width:100vw;
  }
 } 
 @media (max-width: 1200px) {
