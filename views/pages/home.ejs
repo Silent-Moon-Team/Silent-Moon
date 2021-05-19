@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Home</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
     <header class="home_header">
         <h1>Silent Moon</h1>
-        <h2>Good morning <%= `${name}` %></h2>
+        <h2>Good morning <%= `${name}` %>
+        </h2>
         <p>We hope you habe a good day</p>
     </header>
 
@@ -44,99 +46,187 @@
         <!--searchbar-->
         <section>
             <div class="home_searchbar">
-            <input type="text" class="searchTerm" placeholder="">
-            <button type="submit" class="searchButton">
+                <input type="text" class="searchTerm" placeholder="">
+                <button type="submit" class="searchButton">
 
-            </button>
+                </button>
             </div>
         </section>
         <!--Ende searchbar-->
 
         <!--Recomended Yoga-->
         <section class="recomended_yoga">
-        <h1>Recomended Yoga for you</h1>
+            <h1>Recomended Yoga for you</h1>
         </section>
 
 
-    <!--Recomended Yoga Bilder & Text-->
-    <div class="recomended_yoga_pics">
-        <figure>
-            <img src="images/yogasession.png">
-            <figcaption>Fatburner</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
+        <!--Recomended Yoga Bilder & Text-->
+        <div class="recomended_yoga_pics">
+            <figure>
+                <img src="images/yogasession.png">
+                <figcaption>Fatburner</figcaption>
+                <div class="bild_p">
+                    <p>Beginner</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
 
-        <figure>
-            <img src="images/back.png">
-            <figcaption>Recovery</figcaption>
-            <div class="bild_p">
-                <p>Expert</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
+            <figure>
+                <img src="images/back.png">
+                <figcaption>Recovery</figcaption>
+                <div class="bild_p">
+                    <p>Expert</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
 
-        <figure>
-            <img src="images/innerbalance.png">
-            <figcaption>Back</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
-    </div>
+            <figure>
+                <img src="images/innerbalance.png">
+                <figcaption>Back</figcaption>
+                <div class="bild_p">
+                    <p>Beginner</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
+        </div>
 
 
-    <!--Recomended Meditation-->
+        <!--Recomended Meditation-->
         <section class="recomended_meditation">
-        <h1>Recomended Meditation for you</h1>
+            <h1>Recomended Meditation for you</h1>
         </section>
 
-    
-    <!--Recomended meditation Bilder & Text-->
-    <div class="recomended_meditation_pics">
-        <figure>
-            <img src="images/sleep.png">
-            <figcaption>Focus</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
 
-        <figure>
-            <img src="images/refresh.png">
-            <figcaption>Refresh</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
+        <!--Recomended meditation Bilder & Text-->
+        <div class="recomended_meditation_pics">
+            <figure>
+                <img src="images/sleep.png">
+                <figcaption>Focus</figcaption>
+                <div class="bild_p">
+                    <p>Beginner</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
 
-        <figure>
-            <img src="images/Recovery.png">
-            <figcaption>Experience</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
-            </div>
-        </figure>
-    </div>
+            <figure>
+                <img src="images/refresh.png">
+                <figcaption>Refresh</figcaption>
+                <div class="bild_p">
+                    <p>Beginner</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
 
+            <figure>
+                <img src="images/Recovery.png">
+                <figcaption>Experience</figcaption>
+                <div class="bild_p">
+                    <p>Beginner</p>
+                    <p>3-10min</p>
+                </div>
+            </figure>
+        </div>
 
-
+       
     </main>
 
+ <!-- *********************** -->
+        <!-- ******  NAVIGATION   ****** -->
+        <!-- *********************** -->
+        <div class="container nav-bar">
+            <nav>
+
+
+                <a href="/meditation">
+                    <div class=" btn_wrapper">
+
+                        <div class="nav_top">
+
+                            <img src="/images/nav_meditation.svg" alt="">
+                        </div>
+                        <div class="nav_bottom">
+
+                            <p>Meditation</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/music">
+                    <div class="btn_wrapper">
+
+                        <div class="nav_top">
+
+                            <img src="/images/music.svg" alt="">
+                        </div>
+
+                        <div class="nav_bottom">
+
+                            <p>Music</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/home">
+                    <div class=" active btn_wrapper">
+
+                        <div class="nav_top">
+
+                            <img src="/images/home.svg" alt="">
+                        </div>
+
+                        <div class="nav_bottom">
+
+                            <p>Home</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/yoga">
+                    <div class=" btn_wrapper">
+
+                        <div class="nav_top">
+
+                            <img src="/images/yoga.svg" alt="">
+                        </div>
+
+                        <div class="nav_bottom">
+
+                            <p>Yoga</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/profile">
+                    <div class="btn_wrapper">
+
+                        <div class="nav_top">
+
+                            <img src="/images/profile.svg" alt="">
+                        </div>
+
+                        <div class="nav_bottom">
+
+                            <p>Profile</p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </nav>
+        </div>
 
 
 
 
 
-    
 
-    <%- include('./partials/nav.ejs') %>
+
+
+
 </body>
 
 </html>
