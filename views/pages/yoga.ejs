@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <section>
         <% result.forEach(element=> { %>
             <div>
-                <img src=<%=element.img_url %> alt="coolesBild" with="300px" height="300px">
+                <img src=<%=element.img_url %> alt="coolesBild" witdh="300px" height="300px">
                 <video width="300" height="300" controls>
                     <source src=<%=element.url_video %> >
                 </video>
@@ -29,6 +30,96 @@
             </div>
             <% }) %>
     </section>
+
+       <!-- *********************** -->
+    <!-- ******  NAVIGATION   ****** -->
+    <!-- *********************** -->
+    <div class="container nav-bar">
+        <nav>
+            
+    
+                <a href="/meditation">
+                    <div class="btn_wrapper">
+                        
+                            <div class="nav_top">
+    
+                                <img src="/images/nav_meditation.svg" alt="">
+                            </div>
+                            <div class="nav_bottom">
+    
+                                <p>Meditation</p>
+                            </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/music">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/music.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Music</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/home">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/home.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Home</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/yoga">
+                    <div class="active btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/yoga.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Yoga</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/profile">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/profile.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Profile</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+        </nav>
+    </div>
+
 </body>
 
 </html>

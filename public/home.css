@@ -14,139 +14,146 @@ font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
-/*====================
-    HomePage Styles
-======================*/
+
 
 /*====================
     header Silent Moon 
 ======================*/
 .home_header h1{
-    padding: 30px 0px 50px 0px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:1em;
+    font-size: 1.3em;
     color: #4A503D;
-    
+    padding: 30px 0px 40px 0px; 
+    font-weight: 600;
+    letter-spacing: 2px;
 }
+
 
 .home_header h2{
     font-size: 30px;
-    padding: 20px 0px 15px 50px;
+    padding: 20px 0px 10px 5%;
     font-family: 'Source Sans Pro', sans-serif;
     color:#4A503D;
-    font-weight: 900;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.5em;
 }
 
 .home_header p{
-    padding: 0px 0px 15px 50px;
+    padding: 0px 0px 15px 5%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color:#A1A4B2;
 }
 
-/*=========================
-    healthy back & meditation main container 
-==========================*/
-
-.main_container{
-    display: flex;
-    padding-bottom: 30px;
-    height: 25vh;
-}
-
-
-/*=========================
-    Home erstes Bild (healthy back)
-==========================*/
-.home_firstpic{
-    background-image: url("images/main1.png");
-    color: #FFECCC;
+/*====================
+    Bild Container Back & Meditations
+======================*/
+.bild_container{
+    display:flex;
+    justify-content: space-evenly;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*=========================
-    Home zweites Bild (meditation)
-==========================*/
-.home_secondpic{
-    background-image: url("images/main2.png");
+.Bild1{
+    background: url("/images/main1.png") no-repeat center / cover;
+    border-radius: 5%;
+}
+
+.Bild1 h2{
+    font-size: 1em;
+    color:#FFECCC;
+    padding-right: 50px; 
+    padding-top: 50px;
+
+}
+
+.Bild1 h3{
+    font-size: 0.5em;
+    color:#FFECCC;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+
+.Bild2{
+    background: url("/images/main2.png") no-repeat center / cover;
+    padding: 50px 50px 0px 10px;
+    border-radius: 5%;
+}
+
+.Bild2 h2,h3{
     color: #4A503D;
-    font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 
 /*====================
-home_searchbar Style
+    MIN & Start im Bild 
 ======================*/
-
-.home_searchbar{
-    text-align: center;
-    padding-bottom: 40px;
+.min_start{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5em;
+    color: #FEFCF8;
+    padding-top: 30px;
 }
 
-/*====================
-Recomended Yoga for you font Style
-======================*/
 
-.recomended_yoga{
+.sessions{
     font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
 }
 
-
 /*====================
-Recomended_yoga_Pics Style
+    slideshow Styles
 ======================*/
-.recomended_yoga_pics{
-    display: flex;
-    font-family: 'Source Sans Pro', sans-serif;
+.horizontal_slider{
+    display:block;
+    width: 100%;
+    overflow-x: scroll;
 }
 
+.slider_container{
+    display:block;
+    white-space: nowrap;
+    margin-left: 4%;
+}
+
+.item{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.item image{
+    width: 150px;
+}
+
+
 /*====================
-Recomended_yoga_pics bildunterschrift
+    slideshow Beschreibung
 ======================*/
 figcaption{
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
+    font-size: 1.1em;
     color: #4A503D;
-    
+    font-weight:bold;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
 }
 
-.bild_p{
-    display: flex;
-    padding-bottom: 30px;
+.description{
+    display:flex;
+    justify-content: space-between;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
     color: #A1A4B2;
-    font-size: 0.8em;
+<<<<<<< HEAD
+    margin: 0px 0px 45px 0px;
 }
-
-
-
-/*====================
-Recomended_meditation_Pics Style
-======================*/
-.recomended_meditation_pics{
-    display: flex;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-/*====================
-Recomended_yoga_pics bildunterschrift
-======================*/
-figcaption{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    color: #4A503D;
-    
-}
-
-.bild_p{
-    display: flex;
-    padding-bottom: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #A1A4B2;
+=======
     font-size: 0.8em;
 }
 
@@ -159,3 +166,5 @@ Recomended Meditation for you font Style
     color: #4A503D;
     padding-bottom: 20px;
 }
+
+>>>>>>> 853c69a0a9017e60a53e03cc4ce0065c11d845b8
