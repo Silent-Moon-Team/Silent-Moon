@@ -10,17 +10,12 @@
 </head>
 
 <body>
-    <!--Silent Moon header-->
-    <header class="profile_header">
-        <h1>Silent Moon</h1>
+    <header>
+        <h1>SILENT MOON</h1>
     </header>
 
-    <!--Profil Bild-->
-    <section class="profile_section">
-        <div class="profile_foto">
-            <img src="images/profilepic.png" alt="profile image">
-        </div>
-
+    <section class="profile_head">
+        <img src="images/profilepic.png">
         <!--Hellotext-->
         <div class="profile_hello">
             <h2>Hello <%= `${name}` %>
@@ -28,88 +23,83 @@
         </div>
     </section>
 
-    <!--Searchbar-->
-    <div class="searchbar">
-        <input type="text" class="searchTerm" placeholder="">
-        <button type="submit" class="searchButton">
+    <section class="opener_text">
+        <h3>Time for Yoga and Meditation</h3>
+    </section>
 
-        </button>
-    </div>
-
-
-    <!--Profil Yoga sessions Bilder-->
-    <section class="profil_sessions">
+    <section class="sessions">
         <h2>Favourite Yoga Sessions</h2>
     </section>
 
-    <div class="fav_sessions_pics">
-        <figure>
-            <img src="images/fatburner.png">
-            <figcaption>Fatburner</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
+    <!--Horizontal Slider-->
+    <div class="horizontal_slider">
+        <div class="slider_container">
+            <div class="item">
+                <img src="images/fatburner.png">
+                <figcaption>Fatburner</figcaption>
+                <div class="description">
+                    <p>BEGINNER</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
-
-        <figure>
-            <img src="images/recovery.png">
-            <figcaption>Recovery</figcaption>
-            <div class="bild_p">
-                <p>Expert</p>
-                <p>3-10min</p>
+            <div class="item">
+                <img src="images/recovery.png">
+                <figcaption>Recovery</figcaption>
+                <div class="description">
+                    <p>Expert</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
-
-        <figure>
-            <img src="images/back.png">
-            <figcaption>Back</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
+            <div class="item">
+                <img src="images/innerbalance.png">
+                <figcaption>Back</figcaption>
+                <div class="description">
+                    <p>BEGINNER</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
+        </div>
     </div>
 
-
-    <!--Profil Meditation sessions Bilder-->
-    <section class="profil_sessions">
-        <h2>Favourite Meditation Sessions</h2>
+    <section class="sessions">
+        <h2>Favourite Meditations</h2>
     </section>
 
-    <div class="fav_sessions_pics">
-        <figure>
-            <img src="images/innerbalance.png">
-            <figcaption>Inner Balance</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
+    <!--Horizontal Slider2-->
+    <div class="horizontal_slider">
+        <div class="slider_container">
+            <div class="item">
+                <img src="images/back.png">
+                <figcaption>Inner Balance</figcaption>
+                <div class="description">
+                    <p>BEGINNER</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
-
-        <figure>
-            <img src="images/selfforgiveness.png">
-            <figcaption>Self-forgiveness</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
+            <div class="item">
+                <img src="images/selfforgiveness.png">
+                <figcaption>Self-Forgiveness</figcaption>
+                <div class="description">
+                    <p>BEGINNER</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
-
-        <figure>
-            <img src="images/sleep.png">
-            <figcaption>Sleep</figcaption>
-            <div class="bild_p">
-                <p>Beginner</p>
-                <p>3-10min</p>
+            <div class="item">
+                <img src="images/refresh.png">
+                <figcaption>Sleep</figcaption>
+                <div class="description">
+                    <p>BEGINNER</p>
+                    <p>3-10MIN</p>
+                </div>
             </div>
-        </figure>
+        </div>
     </div>
-    
+
 
     <li><a href="/auth/logout">LOG OUT</a></li>
-
     <%- include('./partials/nav.ejs') %>
+
+
 
 </body>
 
