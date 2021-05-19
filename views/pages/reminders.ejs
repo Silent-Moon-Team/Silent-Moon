@@ -15,10 +15,9 @@
     </header>
     <section class="reminder_time-meditate">
         <h1 class="reminder_time-meditate-h1">What time would you like to meditate?</h1>
-        <p class="reminder_time-meditate-p">Any time you can choose but We recommend first thing in th morning.</p>
+        <p class="reminder_time-meditate-p">Any time you can choose but We recommend first thing in the morning.</p>
         <form action="/uhr" method="post">
             <input type="time" data-role="timepicker" class="reminder_time-meditate-input" id="zeit">
-            <input type="button" value="show" onclick="zeigMir()">
         </form>
     </section>
     <section class="reminder_day-meditate">
@@ -26,42 +25,79 @@
         <p class="reminder_day-meditate-p">Everyday is best, but we recommend picking
             at least five.</p>
         <!-- <div class="reminder-daysname-container" id="reminder-daysname-container" onclick="changeColor()">
-            <div class="reminder-daysname" id="reminder-daysname">SU</div>
-            <div class="reminder-daysname" id="reminder-daysname">M</div>
-            <div class="reminder-daysname" id="reminder-daysname">T</div>
-            <div class="reminder-daysname" id="reminder-daysname">W</div>
-            <div class="reminder-daysname" id="reminder-daysname">TH</div>
-            <div class="reminder-daysname" id="reminder-daysname">F</div>
-            <div class="reminder-daysname" id="reminder-daysname">S</div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="#" class="reminder-daysname-a" id="reminder-daysname-a">SU</a>
+            </div>
+           <div class="reminder-daysname" id="reminder-daysname">
+                <a href="#" class="reminder-daysname-a" id="reminder-daysname-a">M</a>
+            </div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">T</a>
+            </div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">W</a>
+            </div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">TH</a>
+            </div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">F</a>
+            </div>
+            <div class="reminder-daysname" id="reminder-daysname">
+                <a href="" class="reminder-daysname-a" id="reminder-daysname-a">M</a>
+            </div>
         </div> -->
-        <form action="" class="reminder-daysname-container" onchange="changeColor()">
-            <input type="checkbox" name="days">
-            <label id="reminder-daysname" class="reminder-daysname">SU</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">M</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">T</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">W</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">TH</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">F</label>
-            <input type="checkbox" name="days" id="">
-            <label class="reminder-daysname" id="reminder-daysname">S</label>
+        <form action="" target="_blank" class="reminder-daysname-container" onclick="changeColor()">
+            <div class="reminder-daysname-checkbox">
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">SU</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck2">
+                    <label class="reminder-daysname" id="reminder-daysname">M</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">T</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">W</label>
+                </div>
+            </div>
+            <div class="reminder-daysname-checkbox2">
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">TH</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">F</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck">
+                    <label class="reminder-daysname" id="reminder-daysname">S</label>
+                </div>
+            </div>
         </form>
-        <div id="reminder"></div>
+    </section>
+    <section>
+        <button class="reminder-save-Btn">SAVE</button><br>
+        <a href="/profile" class="reminder-ignore-Btn">NO,THANKS</a>
     </section>
     <script>
-        const zeigMir = () => {
-            document.getElementById('reminder').innerHTML = document.getElementById('zeit').value
-        }
-        const changeColor = () => {
-            document.getElementById('reminder-daysname').style.backgroundColor = '#8E9775'
-            document.getElementById('reminder-daysname').style.color = '#FAF2DA'
-            //document.getElementById('reminder').innerHTML = document.getElementById('reminder-daysname').value
-        }
 
+        const myCheck = document.getElementById('myCheck')
+        myCheck.addEventListener('click', () => {
+            if (myCheck.checked) {
+                document.querySelector('#reminder-daysname').style.backgroundColor = '#8E9775'
+                document.querySelector('#reminder-daysname').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('#reminder-daysname').style.backgroundColor = '#E5E5E5'
+                document.querySelector('#reminder-daysname').style.color = '#3F414E'
+            }
+        })
     </script>
 </body>
 

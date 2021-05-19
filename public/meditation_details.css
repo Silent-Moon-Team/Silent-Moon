@@ -18,13 +18,46 @@ font-family: 'Source Sans Pro', sans-serif;
 Meditation_details_Bild Styles
 ======================*/
 .meditation_details_header{
-    background: url('https://images.unsplash.com/photo-1513097847644-f00cfe868607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=932&q=80') no-repeat center/ cover;
+    background: url('/images/meditation.jpeg') center/ cover no-repeat ;
     padding: 0px 0px 40% 0px;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height:80vh;
 }
-
+/*====================
+Meditation_details_Buttons Styles
+======================*/
+.meditation_details_buttoncontainer{
+    padding: 40px 40px;
+    display:flex;
+    justify-content:space-between;
+}
+.meditation_details-backBtn{
+    height:25px;
+    width:25px;
+}
+.meditation_details-backBtn-circle{
+    padding:15px;
+    background-color: #FAF2DA;
+    border-radius:50%;
+    border:1px solid #FAF2DA;
+}
+.btn_favAndDownload{
+    display:flex;
+    justify-content: space-around;
+    width:15vw;
+}
+.meditation_details-favBtn,.meditation_details-downloadBtn{
+    height:25px;
+    width:25px;
+}
+.meditation_details-favAndDlBtn-circle{
+    padding:15px;
+    background-color:#e4a197;
+    border-radius:50%;
+    border:1px solid #E28F83;
+}
 /*====================
 Meditation_details_Überschrift_h1 Styles
 ======================*/
@@ -55,28 +88,10 @@ Meditation_details_p Styles
     font-weight: 400;
     color: #A1A4B2;
 }
-
 /*====================
-Meditation_details_buttonconatiner
+Meditation_details_playlist-h1 Styles
 ======================*/
-.meditation_details_buttoncontainer{
-    padding: 30px 10px;
-    display:flex;
-    justify-content:space-between;
-}
-
-/*====================
-Favorits & Listening conatiner
-======================*/
-.favorits_listening{
-    display: flex;
-    justify-content:space-around;
-    padding-bottom: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #A1A4B2;
-}
-
-.meditation_detail_playlist h1{
+.meditation_detail_playlist-h1{
     font-family: 'Source Sans Pro', sans-serif;
     color: #3F414E;
     padding-left: 5%;;
@@ -86,13 +101,49 @@ Favorits & Listening conatiner
    meditation Mobile-Version Styles
 ==========================*/
 @media (max-width: 414px) { 
+    .meditation_details_header{
+        height:50vh;
+    }
+    .meditation_details_buttoncontainer{
+        padding: 40px 20px;
+    }
+    /* /////////////////////////////////// */
+    .meditation_details-backBtn{
+        height:12px;
+        width:12px;
+    }
+    .meditation_details-backBtn-circle{
+        padding:8px;
+        height:4vh;
+    }
+    /* /////////////////////////////////// */
+    .btn_favAndDownload{
+        width:25vw;
+    }
+    .meditation_details-favBtn,.meditation_details-downloadBtn{
+        height:12px;
+        width:12px;
+    }
+    .meditation_details-favAndDlBtn-circle{
+        padding:8px;
+        height:4vh;
+    }
+    /* /////////////////////////////////// */
     .meditation_details_h1{
         padding: 10px 0px 0px 10px;
+        font-size:15px;
     }
     .meditation_details_h2{
-        padding: 0px 0px 0px 10px;
+        padding: 5px 0px 0px 10px;
+        font-size:12px;
     }
     .meditation_details_p{
         padding: 5px 0px 0px 10px;
+        font-size:12px;
+        width:76vw;
+    }
+    .meditation_detail_playlist-h1{
+        padding: 5px 0px 0px 10px;
+        font-size:15px;
     }
     }

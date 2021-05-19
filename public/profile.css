@@ -15,73 +15,103 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*====================
-Profile header Silent Moon Style
+    Silent Moon Styles
 ======================*/
-.profile_header h1{
+
+header h1{
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:1.5em;
+    font-size: 1.3em;
     color: #4A503D;
-    padding: 20px 0px 30px 0px;
+    padding: 30px 0px 40px 0px; 
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /*====================
-Profile_section_Bild & Text "hello"  Style
+    Profile Name & Picture Styles
 ======================*/
-.profile_section{
+
+.profile_head{
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.profile_hello{
     font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
+    padding-left: 8%;
+}
+
+.profile_head img{
+    padding-left: 5%;
 }
 
 /*====================
-Profile_section_Bild Style
+    Opener Text Styles
 ======================*/
-.profile_foto{
-    padding-right: 50px; 
-}
 
-/*====================
-Profile_section_searchbar Style
-======================*/
-.searchbar{
+.opener_text{
     text-align: center;
+    color: #A1A4B2;
+    font-family: 'Source Sans Pro', sans-serif;
     padding-bottom: 40px;
 }
 
 /*====================
-Profile_section_fav.sessions Style
+    Favourite Sessions Styles
 ======================*/
-.profil_sessions{
+
+.sessions{
     font-family: 'Source Sans Pro', sans-serif;
-    color:#4A503D;
-    padding-bottom: 30px;
+    color: #4A503D;
+    margin-bottom: 20px;
+    margin-left: 3%;
 }
 
 /*====================
-Profile_fav.session_Pics Style
+    slideshow Styles
 ======================*/
-.fav_sessions_pics{
-    display: flex;
-    font-family: 'Source Sans Pro', sans-serif;
+.horizontal_slider{
+    display:block;
+    width: 100%;
+    overflow-x: scroll;
 }
 
+.slider_container{
+    display:block;
+    white-space: nowrap;
+}
+
+.item{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.item image{
+    width: 150px;
+}
+
+
 /*====================
-Profile_fav.session_pics bildunterschrift
+    slideshow Beschreibung
 ======================*/
 figcaption{
     font-family: 'Source Sans Pro', sans-serif;
-    color:#4A503D;
+    font-size: 1.1em;
+    color: #4A503D;
     font-weight:bold;
-
+    padding-bottom: 5px;
+    letter-spacing: 2px;
 }
 
-.bild_p{
-    display: flex;
-    padding-bottom: 30px;
+.description{
+    display:flex;
+    justify-content: space-between;
     font-family: 'Source Sans Pro', sans-serif;
-    color:#A1A4B2;
+    font-size: 12px;
+    color: #A1A4B2;
+    margin: 0px 0px 45px 0px;
 }
 
