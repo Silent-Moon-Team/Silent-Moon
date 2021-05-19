@@ -53,3 +53,41 @@ font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     color: #A1A4B2;
 }
+
+/*====================
+    MusicMain Style
+======================*/
+.music_main{
+    margin: auto;
+    width:90%;
+}
+
+.music_main .music_main_a_wrapper i{
+    margin: 5px 5px 5px 15px;
+    font-size: 42px;
+    border-radius: 100%;
+    background: #8E9775;
+    color: white;
+}
+
+.music_main_a_wrapper a{
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    background: #FAF2DA;
+    border-radius: 20px
+}
+
+.music_main_a_wrapper_inner{
+    padding-left: 20px;
+}
+
+.h2{
+    font-size: 15px;
+}
+
+.p{
+    font-size: px;
+}

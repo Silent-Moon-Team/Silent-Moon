@@ -51,33 +51,33 @@
             <div class="reminder-daysname-checkbox">
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">SU</label>
+                    <label class="reminder-daysname">SU</label>
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck2">
-                    <label class="reminder-daysname" id="reminder-daysname">M</label>
+                    <label class="reminder-daysname">M</label>
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">T</label>
+                    <label class="reminder-daysname">T</label>
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">W</label>
+                    <label class="reminder-daysname">W</label>
                 </div>
             </div>
             <div class="reminder-daysname-checkbox2">
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">TH</label>
+                    <label class="reminder-daysname">TH</label>
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">F</label>
+                    <label class="reminder-daysname">F</label>
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
-                    <label class="reminder-daysname" id="reminder-daysname">S</label>
+                    <label class="reminder-daysname">S</label>
                 </div>
             </div>
         </form>
@@ -91,11 +91,11 @@
         const myCheck = document.getElementById('myCheck')
         myCheck.addEventListener('click', () => {
             if (myCheck.checked) {
-                document.querySelector('#reminder-daysname').style.backgroundColor = '#8E9775'
-                document.querySelector('#reminder-daysname').style.color = '#FAF2DA'
+                document.querySelector('.reminder-daysname').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname').style.color = '#FAF2DA'
             } else {
-                document.querySelector('#reminder-daysname').style.backgroundColor = '#E5E5E5'
-                document.querySelector('#reminder-daysname').style.color = '#3F414E'
+                document.querySelector('.reminder-daysname').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname').style.color = '#3F414E'
             }
         })
     </script>
