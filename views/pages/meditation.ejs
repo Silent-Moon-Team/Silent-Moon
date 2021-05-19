@@ -37,19 +37,21 @@
         </p>
     </section>
 
-    <!-- Favorits & Listening
-    <section class="favorits_listening">
-        <div class="favorits">
-            <p>Favorits</p>
-        </div>
-        <div class="Listening">
-            <p>Listening</p>
-
-        </div>
-    </section> -->
-
     <section class="meditation_detail_playlist">
         <h1 class="meditation_detail_playlist-h1">Playlist</h1>
+        <% data.forEach(element=> { %>
+
+            <a href=<%=`/med_player/${data.indexOf(element)}`%>>
+                <h2>
+                    <%= element.track.name %>
+                </h2>
+                <audio controls>
+                    <source src=<%=element.track.preview_url %>>
+                </audio>
+
+            </a>
+
+            <% }) %>
     </section>
     <%- include('./partials/nav.ejs') %>
         <script>

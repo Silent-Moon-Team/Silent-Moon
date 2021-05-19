@@ -107,7 +107,7 @@ app.use('/yoga', router)
 
 
 // meditation   bla bla kA was hier sein soll, aber muss eingeloggt sein
-app.use('/meditation', router)
+app.get('/meditation', router)
 
 
 app.use('/med_player', router)
