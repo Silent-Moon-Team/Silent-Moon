@@ -8,6 +8,8 @@
     <title>Meditation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./meditation_details.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
@@ -16,16 +18,11 @@
         <!--Buttons auf dem Bild-->
         <div class="meditation_details_buttoncontainer">
             <a href="/yoga_details" class="meditation_details-backBtn-circle">
-                <img src="/images/arrow.png" alt="" class="meditation_details-backBtn">
+                <i class="las la-times"></i>
             </a>
-            <div class="btn_favAndDownload">
-                <a href="#" class="meditation_details-favAndDlBtn-circle" id="fav-Btn">
-                    <img src="/images/heart.png" alt="" class="meditation_details-favBtn" id="heart">
-                    <img src="/images/heart2.png" class="meditation_details-favBtn" id="heart2" style="display: none">
-                </a>
-                <a href="#" class="meditation_details-favAndDlBtn-circle">
-                    <img src="/images/download.png" alt="" class="meditation_details-downloadBtn">
-                </a>
+            <div class="meditation_details-favAndDlBtn-circle">
+                <button class="meditation_details-favBtn"><i class="las la-heart"></i></button>
+                <button class="meditation_details-downloadBtn"><i class="las la-cloud-download-alt"></i></button>
             </div>
         </div>
     </header>
@@ -38,19 +35,21 @@
         </p>
     </section>
 
-    <!-- Favorits & Listening
-    <section class="favorits_listening">
-        <div class="favorits">
-            <p>Favorits</p>
-        </div>
-        <div class="Listening">
-            <p>Listening</p>
-
-        </div>
-    </section> -->
-
     <section class="meditation_detail_playlist">
         <h1 class="meditation_detail_playlist-h1">Playlist</h1>
+        <% data.forEach(element=> { %>
+
+            <a href=<%=`/med_player/${data.indexOf(element)}`%> class="meditation_detail_playlist-name">
+                <h2 class="meditation_detail_playlist-h2">
+                    <%= element.track.name %>
+                </h2>
+                <audio controls class="meditation_detail_playlist-audio">
+                    <source src=<%=element.track.preview_url %>>
+                </audio>
+
+            </a>
+
+            <% }) %>
     </section>
 
      <!-- *********************** -->
