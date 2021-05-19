@@ -35,6 +35,24 @@
 
             </div>
         </section>
+<<<<<<< HEAD
+    </main>
+
+    <h1>music page</h1>
+    <% data.forEach(element=> { %>
+
+        <a href=<%=`/med_player/${data.indexOf(element)}`%>>
+            <h2>
+                <%= element.track.name %>
+            </h2>
+            <audio controls>
+                <source src=<%=element.track.preview_url %>>
+            </audio>
+
+        </a>
+
+        <% }) %>
+=======
 
         <section class="music_main">
             <% data.forEach(element=> { %>
@@ -53,6 +71,7 @@
         </section>
     </main>
     <%- include('./partials/nav3.ejs') %>
+>>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
 </body>
 
 </html>

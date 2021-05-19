@@ -16,9 +16,15 @@
     <section class="reminder_time-meditate">
         <h1 class="reminder_time-meditate-h1">What time would you like to meditate?</h1>
         <p class="reminder_time-meditate-p">Any time you can choose but We recommend first thing in the morning.</p>
-        <form action="/uhr" method="post">
-            <input type="time" data-role="timepicker" class="reminder_time-meditate-input" id="zeit">
+        <form>
+            <input type="text" id="timePicker">
         </form>
+
+        <body>
+
+            <div id="app">
+                <timepicker v-model="time"> </timepicker>
+            </div>
     </section>
     <section class="reminder_day-meditate">
         <h1>Which day would you like to meditate?</h1>
@@ -55,6 +61,17 @@
                 </div>
                 <div>
                     <input type="checkbox" name="days" id="myCheck2">
+<<<<<<< HEAD
+                    <label class="reminder-daysname2" id="reminder-daysname">M</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck3">
+                    <label class="reminder-daysname3" id="reminder-daysname">T</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck4">
+                    <label class="reminder-daysname4" id="reminder-daysname">W</label>
+=======
                     <label class="reminder-daysname">M</label>
                 </div>
                 <div>
@@ -64,10 +81,21 @@
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
                     <label class="reminder-daysname">W</label>
+>>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
                 </div>
-            </div>
-            <div class="reminder-daysname-checkbox2">
                 <div>
+<<<<<<< HEAD
+                    <input type="checkbox" name="days" id="myCheck5">
+                    <label class="reminder-daysname5" id="reminder-daysname">TH</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck6">
+                    <label class="reminder-daysname6" id="reminder-daysname">F</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="days" id="myCheck7">
+                    <label class="reminder-daysname7" id="reminder-daysname">S</label>
+=======
                     <input type="checkbox" name="days" id="myCheck">
                     <label class="reminder-daysname">TH</label>
                 </div>
@@ -78,12 +106,13 @@
                 <div>
                     <input type="checkbox" name="days" id="myCheck">
                     <label class="reminder-daysname">S</label>
+>>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
                 </div>
             </div>
         </form>
     </section>
     <section>
-        <button class="reminder-save-Btn">SAVE</button><br>
+        <a href="/profile" class="reminder-save-Btn">SAVE</a><br>
         <a href="/profile" class="reminder-ignore-Btn">NO,THANKS</a>
     </section>
     <script>
@@ -93,11 +122,158 @@
             if (myCheck.checked) {
                 document.querySelector('.reminder-daysname').style.backgroundColor = '#8E9775'
                 document.querySelector('.reminder-daysname').style.color = '#FAF2DA'
+<<<<<<< HEAD
             } else {
                 document.querySelector('.reminder-daysname').style.backgroundColor = '#E5E5E5'
                 document.querySelector('.reminder-daysname').style.color = '#3F414E'
             }
         })
+        const myCheck2 = document.getElementById('myCheck2')
+        myCheck2.addEventListener('click', () => {
+            if (myCheck2.checked) {
+                document.querySelector('.reminder-daysname2').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname2').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname2').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname2').style.color = '#3F414E'
+            }
+        })
+        const myCheck3 = document.getElementById('myCheck3')
+        myCheck3.addEventListener('click', () => {
+            if (myCheck3.checked) {
+                document.querySelector('.reminder-daysname3').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname3').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname3').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname3').style.color = '#3F414E'
+            }
+        })
+        const myCheck4 = document.getElementById('myCheck4')
+        myCheck4.addEventListener('click', () => {
+            if (myCheck4.checked) {
+                document.querySelector('.reminder-daysname4').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname4').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname4').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname4').style.color = '#3F414E'
+            }
+        })
+        const myCheck5 = document.getElementById('myCheck5')
+        myCheck5.addEventListener('click', () => {
+            if (myCheck5.checked) {
+                document.querySelector('.reminder-daysname5').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname5').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname5').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname5').style.color = '#3F414E'
+            }
+        })
+        const myCheck6 = document.getElementById('myCheck6')
+        myCheck6.addEventListener('click', () => {
+            if (myCheck6.checked) {
+                document.querySelector('.reminder-daysname6').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname6').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname6').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname6').style.color = '#3F414E'
+=======
+            } else {
+                document.querySelector('.reminder-daysname').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname').style.color = '#3F414E'
+>>>>>>> d0e8ada5c70c0cd4a33910968ee76f6963c513d0
+            }
+        })
+        const myCheck7 = document.getElementById('myCheck7')
+        myCheck7.addEventListener('click', () => {
+            if (myCheck7.checked) {
+                document.querySelector('.reminder-daysname7').style.backgroundColor = '#8E9775'
+                document.querySelector('.reminder-daysname7').style.color = '#FAF2DA'
+            } else {
+                document.querySelector('.reminder-daysname7').style.backgroundColor = '#E5E5E5'
+                document.querySelector('.reminder-daysname7').style.color = '#3F414E'
+            }
+        })
+        function timePicker(id) {
+            var input = document.getElementById(id);
+            var timePicker = document.createElement('div');
+            timePicker.classList.add('time-picker');
+            input.value = '08:30';
+
+            //open timepicker
+            input.onclick = function () {
+                timePicker.classList.toggle('open');
+
+                this.setAttribute('disabled', 'disabled');
+                timePicker.innerHTML += `
+      <div class="set-time">
+         <div class="label">
+            <a id="plusH" >+</a>
+            <input class="set" type="text" id="hour" value="08">
+            <a id="minusH">-</a>
+         </div>
+         <div class="label">
+            <a id="plusM">+</a>
+            <input class="set" type="text" id="minute" value="30">
+            <a id="minusM">-</a>
+         </div>
+      </div>
+      <div id="submitTime">Set time</div>`;
+                this.after(timePicker);
+                var plusH = document.getElementById('plusH');
+                var minusH = document.getElementById('minusH');
+                var plusM = document.getElementById('plusM');
+                var minusM = document.getElementById('minusM');
+                var h = parseInt(document.getElementById('hour').value);
+                var m = parseInt(document.getElementById('minute').value);
+                //increment hour
+                plusH.onclick = function () {
+                    h = isNaN(h) ? 0 : h;
+                    if (h === 23) {
+                        h = -1;
+                    }
+                    h++;
+                    document.getElementById('hour').value = (h < 10 ? '0' : 0) + h;
+                }
+                //decrement hour
+                minusH.onclick = function () {
+                    h = isNaN(h) ? 0 : h;
+                    if (h === 0) {
+                        h = 24;
+                    }
+                    h--;
+                    document.getElementById('hour').value = (h < 10 ? '0' : 0) + h;
+                }
+                //increment hour
+                plusM.onclick = function () {
+                    m = isNaN(m) ? 0 : m;
+                    if (m === 45) {
+                        m = -15;
+                    }
+                    m = m + 15;
+                    document.getElementById('minute').value = (m < 10 ? '0' : 0) + m;
+                }
+                //decrement hour
+                minusM.onclick = function () {
+                    m = isNaN(m) ? 0 : m;
+                    if (m === 0) {
+                        m = 60;
+                    }
+                    m = m - 15;
+                    document.getElementById('minute').value = (m < 10 ? '0' : 0) + m;
+                }
+
+                //submit timepicker
+                var submit = document.getElementById("submitTime");
+                submit.onclick = function () {
+                    input.value = document.getElementById('hour').value + ':' + document.getElementById('minute').value;
+                    input.removeAttribute('disabled');
+                    timePicker.classList.toggle('open');
+                    timePicker.innerHTML = '';
+                }
+            }
+        }
+
+        timePicker('timePicker');
     </script>
 </body>
 
