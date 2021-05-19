@@ -15,7 +15,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 body{
     margin:0;
-    background-color: #FAF2DA;
+    background-color: #E5E5E5;
     ;
 }
 
@@ -29,8 +29,8 @@ body{
     color:#3F414E;
 }
 .reminder_time-meditate,.reminder_day-meditate{
-    padding-left: 30px;
-    padding-top:7vh;
+    padding-left: 35.5vw;
+    padding-top:5vh;
     font-family: 'Source Sans Pro', sans-serif;
     color:#3F414E;
 }
@@ -45,11 +45,11 @@ body{
     border: 2px solid #A1A4B2;
 }
 /*====================
-    reminder-daysname Styles
+    reminder-daysname-checkbox Styles
 ======================*/
 .reminder-daysname-container{
     margin-top:3vh;
-    width:40vw;
+    width:50vw;
 }
 .reminder-daysname{
     border-radius: 50%;
@@ -57,5 +57,91 @@ body{
     padding: 10px 15px;
     font-size:10px;
     background-color: #E5E5E5;
-    margin-left: -18px;
+}
+.reminder-daysname-checkbox{
+    margin:6vh 0;
+    display: flex;
+    justify-content:space-around;
+    width: 30vw;
+}
+.reminder-daysname-checkbox2{
+    margin:6vh 5vw;
+    display: flex;
+    justify-content:space-around;
+    width: 20vw;
+}
+.reminder-save-Btn{
+    width:30vw;
+    margin:5vh 35vw;
+    padding: 2vh 0;
+    border: 1px solid #E28F83;
+    border-radius: 38px;
+    background-color: #E28F83;
+    color:#FAF2DA;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1em;
+}
+.reminder-ignore-Btn{
+    text-decoration: none;
+    color: #E28F83;
+    text-align: center;
+    margin:1vh 46vw;
+    letter-spacing: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+}
+/*====================================================
+    reminder-daysname MEDIA-QUERIES-Mobile-Version
+======================================================*/
+@media (max-width: 414px) { 
+    .reminder_header{
+        font-size:15px;
+        letter-spacing: 2px;
+    }
+    /* ///////////////////////////////////////// */
+    .reminder_time-meditate,.reminder_day-meditate{
+    padding-left: 10vw;
+    font-size:11px;
+    letter-spacing: 1px;
+}
+    .reminder_time-meditate-p,.reminder_day-meditate-p{
+    font-size:10px;
+    letter-spacing: 1px;
+}
+    .reminder-daysname-container{
+    width:100vw;
+}
+    .reminder-daysname{
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size:7px;
+}
+    .reminder_time-meditate-input{
+        padding: 3px 5px;
+    }
+    /* ///////////////////////////////////////// */
+    .reminder-daysname{
+        padding: 10px;
+        font-size:10px;
+    }
+    .reminder-daysname-checkbox{
+        margin:3vh 7vw;
+        width: 65vw;
+    }
+    .reminder-daysname-checkbox2{
+        margin:6vh 12vw;
+        width: 55vw;
+    }
+    /* ///////////////////////////////////////// */
+    .reminder-save-Btn{
+        width:40vw;
+        margin:3vh 28vw;
+        padding: 1vh 0;
+        font-size:.8em;
+    }
+    .reminder-ignore-Btn{
+        margin:1vh 36vw;
+        letter-spacing: 2px;
+        font-size: .9em;
+    }
 }
