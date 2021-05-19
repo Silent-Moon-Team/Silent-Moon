@@ -15,7 +15,6 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 
-
 /*====================
     header Silent Moon 
 ======================*/
@@ -41,7 +40,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .home_header p{
-    padding: 0px 0px 15px 5%;
+    padding: 0px 0px 35px 5%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color:#A1A4B2;
@@ -54,6 +53,7 @@ font-family: 'Source Sans Pro', sans-serif;
     display:flex;
     justify-content: space-evenly;
     font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 70px;
 }
 
 .Bild1{
@@ -62,10 +62,11 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Bild1 h2{
-    font-size: 1em;
+    font-size: 1.5em;
     color:#FFECCC;
-    padding-right: 50px; 
+    padding-right: 80px; 
     padding-top: 50px;
+    padding-left: 10px;
 
 }
 
@@ -74,12 +75,12 @@ font-family: 'Source Sans Pro', sans-serif;
     color:#FFECCC;
     letter-spacing: 3px;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 
 .Bild2{
     background: url("/images/main2.png") no-repeat center / cover;
-    padding: 50px 50px 0px 10px;
     border-radius: 5%;
 }
 
@@ -87,23 +88,74 @@ font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
 }
 
+.Bild2 h2{
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 10px;
+    
+}
+
+.Bild2 h3{
+    font-size: 0.5em;
+    padding-left: 10px;
+    letter-spacing: 3px;
+}
 
 /*====================
     MIN & Start im Bild 
 ======================*/
-.min_start{
+.min_start1{
     display: flex;
     justify-content: space-between;
     font-size: 0.5em;
-    color: #FEFCF8;
-    padding-top: 30px;
+    padding: 20px 10px 10px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FAF2DA;
 }
 
+.min_start1 a{
+    color: #4A503D;
+    text-decoration: none;
+    padding-right: 20px;
+    border: 1px solid #FAF2DA;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background:#FAF2DA;
+}
+
+
+.min_start2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5em;
+    color: #FAF2DA;
+    padding: 50px 10px 10px 10px; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.min_start2 a{
+    padding-left:20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #4A503D;
+}
+
+.min_start2 a{
+    color: #FAF2DA;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .sessions{
     font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: 3%;
 }
 
@@ -144,7 +196,7 @@ figcaption{
     letter-spacing: 2px;
 }
 
-.description{
+.description1{
     display:flex;
     justify-content: space-between;
     font-family: 'Source Sans Pro', sans-serif;
@@ -152,14 +204,18 @@ figcaption{
     color: #A1A4B2;
     margin: 0px 0px 45px 0px;
 }
- 
-/*====================
-Recomended Meditation for you font Style
-======================*/
 
-.recomended_meditation{
+.description2{
+    display:flex;
+    justify-content: space-between;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #4A503D;
-    padding-bottom: 20px;
+    font-size: 12px;
+    color: #A1A4B2;
+    margin: 0px 0px 45px 0px;
+}
+
+.description2 p{
+    padding-bottom: 40px;
+
 }
 
