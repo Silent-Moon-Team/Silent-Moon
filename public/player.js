@@ -27,10 +27,10 @@ pauseButton.addEventListener('click', () => {
     playButton.style.display = 'inline-block';
 })
 
-iconHearth.addEventListener('click', () => {
-    iconHearth.style.color = 'rgba(226,143,131, 0.8)';
+iconHeart.addEventListener('click', () => {
+    iconHeart.style.color = 'rgba(226,143,131, 1)';
 })
 
 iconDown.addEventListener('click', () => {
-    iconDown.style.color = 'rgba(226,143,131, 0.8)';
+    iconDown.style.color = 'rgba(226,143,131, 1)';
 })
