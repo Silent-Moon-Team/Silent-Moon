@@ -68,6 +68,7 @@ router.get('/profile', ensureAuth, (req, res) => {
 
     console.log(req.user.googleId);
     console.log(req.user.displayName);
+    
 
 
     res.render('pages/profile', {name: req.user.firstName})

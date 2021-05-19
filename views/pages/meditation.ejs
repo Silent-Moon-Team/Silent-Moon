@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditation</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./meditation_details.css">
 </head>
 
@@ -51,7 +52,99 @@
     <section class="meditation_detail_playlist">
         <h1 class="meditation_detail_playlist-h1">Playlist</h1>
     </section>
+
+     <!-- *********************** -->
+    <!-- ******  NAVIGATION   ****** -->
+    <!-- *********************** -->
+    <div class="container nav-bar">
+        <nav>
+            
+    
+                <a href="/meditation">
+                    <div class="active  btn_wrapper">
+                        
+                            <div class="nav_top">
+    
+                                <img src="/images/nav_meditation.svg" alt="">
+                            </div>
+                            <div class="nav_bottom">
+    
+                                <p>Meditation</p>
+                            </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/music">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/music.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Music</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/home">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/home.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Home</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/yoga">
+                    <div class=" btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/yoga.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Yoga</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+                <a href="/profile">
+                    <div class="btn_wrapper">
+                        
+                        <div class="nav_top">
+    
+                            <img src="/images/profile.svg" alt="">
+                        </div>
+        
+                        <div class="nav_bottom">
+        
+                            <p>Profile</p>
+                        </div>
+                        
+                    </div>
+                </a>
+    
+        </nav>
+    </div>
+
+
     <%- include('./partials/nav.ejs') %>
+    
         <script>
             const favBtn = document.getElementById('fav-Btn');
             const heart = document.getElementById('heart');

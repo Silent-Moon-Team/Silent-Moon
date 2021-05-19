@@ -14,6 +14,8 @@ font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
+
+
 /*====================
     header Silent Moon 
 ======================*/
@@ -148,5 +150,21 @@ figcaption{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
     color: #A1A4B2;
+<<<<<<< HEAD
     margin: 0px 0px 45px 0px;
 }
+=======
+    font-size: 0.8em;
+}
+
+/*====================
+Recomended Meditation for you font Style
+======================*/
+
+.recomended_meditation{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A503D;
+    padding-bottom: 20px;
+}
+
+>>>>>>> 853c69a0a9017e60a53e03cc4ce0065c11d845b8

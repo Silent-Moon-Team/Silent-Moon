@@ -2,6 +2,8 @@ var posSlider = document.getElementById("timeline");
 var audio = document.getElementById("player");
 let playButton = document.getElementById('play_button')
 let pauseButton = document.getElementById('pause_button')
+let iconHeart = document.getElementById('icon_hearth')
+let iconDown = document.getElementById('icon_download')
 
 audio.addEventListener("loadedmetadata", setSliderMax);
 
@@ -23,4 +25,12 @@ playButton.addEventListener('click', () => {
 pauseButton.addEventListener('click', () => {
     pauseButton.style.display = 'none';
     playButton.style.display = 'inline-block';
+})
+
+iconHearth.addEventListener('click', () => {
+    iconHearth.style.color = 'rgba(226,143,131, 0.8)';
+})
+
+iconDown.addEventListener('click', () => {
+    iconDown.style.color = 'rgba(226,143,131, 0.8)';
 })

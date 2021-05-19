@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>music</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./music.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         <!--Section Favorits & Listening-->
         <section class="favorits_listening">
             <div class="favorits">
-                <p>Favorits</p>
+                <p>Favorites</p>
             </div>
             <div class="Listening">
                 <p>Listening</p>
@@ -33,29 +36,23 @@
             </div>
         </section>
 
-
-
-
-
-
+        <section class="music_main">
+            <% data.forEach(element=> { %>
+                <div class="music_main_a_wrapper">
+                    <a href=<%=`/med_player/${data.indexOf(element)}`%>>
+                        <i class="las la-play"></i>
+                        <div class="music_main_a_wrapper_inner">
+                            <h2 class="h2">
+                                <%= element.track.name %>
+                            </h2>
+                            <p class="p">0:30</p>
+                        </div>
+                    </a>
+                    <% }) %>
+                </div>
+        </section>
     </main>
-
-    <h1>music page</h1>
-    <% data.forEach(element=> { %>
-
-        <a href=<%=`/med_player/${data.indexOf(element)}`%>>
-
-
-            <h2>
-                <%= element.track.name %>
-            </h2>
-            <audio controls>
-                <source src=<%=element.track.preview_url %>>
-            </audio>
-
-        </a>
-
-        <% }) %>
+    <%- include('./partials/nav3.ejs') %>
 </body>
 
 </html>

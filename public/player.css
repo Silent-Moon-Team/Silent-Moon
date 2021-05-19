@@ -3,7 +3,7 @@
 ==========================*/
 
 body{
-    background: #FAF2DA;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(250,242,218,1) 50%);
 }
 
 /*=========================
@@ -26,6 +26,10 @@ body{
     border-radius: 50%;
 }
 
+.player_header button:active{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .player_header_two_buttons button{
     background: rgba(226,143,131, 0.5);
 }
@@ -39,7 +43,7 @@ body{
 ==========================*/
 
 .player_main{
-    padding-top: 35vh;
+    padding-top: 45vh;
     text-align: center;
 }
 
@@ -52,7 +56,8 @@ body{
     PlayerControls Styles
 ==========================*/
 .player_main_controls {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 35%;
 }
 
 .player_main_controls i{

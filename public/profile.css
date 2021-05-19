@@ -73,6 +73,10 @@ header h1{
 /*====================
     slideshow Styles
 ======================*/
+
+.horizontal_slider::-webkit-scrollbar{
+    width: 0;
+}
 .horizontal_slider{
     display:block;
     width: 100%;
