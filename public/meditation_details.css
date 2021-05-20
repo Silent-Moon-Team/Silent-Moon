@@ -31,23 +31,8 @@ Meditation_details_Buttons Styles
 .meditation_details_buttoncontainer{
     padding: 20px 20px;
     display:flex;
-    justify-content:space-between;
-}
-.meditation_details-backBtn{
-    font-size: 20px;
-}
-.meditation_details-backBtn-circle{
-    padding: 10px;
-    height:5vh;
-    background-color: #c4c8d8;
-    border-radius:50%;
-    border:1px solid #A1A4B2;
-    color: #3F414E;
-}
-.btn_favAndDownload{
-    display:flex;
-    justify-content: space-around;
-    width:15vw;
+    justify-content:space-evenly;
+    width:35vw;
 }
 .meditation_details-favBtn,.meditation_details-downloadBtn{
     padding:10px;
@@ -100,15 +85,37 @@ Meditation_details_playlist-h1 Styles
 /*====================
 Meditation_details_playlist-name Styles
 ======================*/
-.meditation_detail_playlist-name{
-    text-decoration: none;
-    color: #3F414E;
-    font-family: 'Roboto', sans-serif;
-    font-size: .8em;
+.meditation_main{
+    margin: auto;
+    width:90%;
 }
-.meditation_detail_playlist-h2,.meditation_detail_playlist-audio{
-    margin-top:5vh;
-    padding-left: 5%;
+.meditation_main .meditation_main_a_wrapper i{
+    margin: 5px 5px 5px 15px;
+    font-size: 42px;
+    border-radius: 100%;
+    background: #8E9775;
+    color: white;
+}
+
+.meditation_main_a_wrapper a{
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    background: #FAF2DA;
+    border-radius: 20px
+}
+
+.meditation_main_a_wrapper_inner{
+    padding-left: 20px;
+}
+.h2{
+    font-size: 15px;
+}
+
+.p{
+    font-size: px;
 }
 /*=========================
    meditation Mobile-Version Styles
@@ -121,18 +128,6 @@ Meditation_details_playlist-name Styles
         padding: 20px 20px;
     }
     /* /////////////////////////////////// */
-    .meditation_details-backBtn{
-        height:12px;
-        width:12px;
-    }
-    .meditation_details-backBtn-circle{
-        padding:8px;
-        height:4vh;
-    }
-    /* /////////////////////////////////// */
-    .btn_favAndDownload{
-        width:25vw;
-    }
     .meditation_details-favBtn,.meditation_details-downloadBtn{
         padding:8px;
         height:4vh;
@@ -152,7 +147,7 @@ Meditation_details_playlist-name Styles
         width:76vw;
     }
     .meditation_detail_playlist-h1{
-        padding: 5px 0px 0px 20px;
+        padding: 20px 0px 10px 5px;
         font-size:15px;
     }
     }
