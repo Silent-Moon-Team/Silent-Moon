@@ -48,8 +48,9 @@ header h1{
 }
 
 .profile_head img{
-    padding-left: 5%;
+    margin-left: 5%;
     width: 80px;
+
     border-radius:20%;
 }
 
