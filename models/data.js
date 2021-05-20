@@ -4,21 +4,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const dataSchema = new Schema({
-    img_url: {
-        type: String,
-        required: true
-    },
-    url_video: {
+    img_url2: {
         type: String,
         required: true
     },
     title: {
         type: String,
         require: true,
-    },
-    level: {
-        type: String,
-        required: true
     },
     description: {
         type: String,

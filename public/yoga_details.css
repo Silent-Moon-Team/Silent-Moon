@@ -56,16 +56,6 @@ Yoga_details_p Styles
     font-weight: 400;
     color: #A1A4B2;
 }
-
-/*====================
-Yoga_details_buttonconatiner
-======================*/
-.yoga_details_buttoncontainer{
-    padding: 50px 10px;
-    display:flex;
-    justify-content:space-between;
-}
-
 /*=========================
     yoga-details Mobile-Version Styles
 ==========================*/
@@ -83,6 +73,16 @@ Yoga_details_buttonconatiner
         .yoga_details_p{
             padding: 5px 0px 10px 10px;
         }
+        /* --------------------------------------------- */
+        .yoga_details_buttoncontainer{
+            padding: 20px 20px;
+        }
+        .yoga_details-favBtn,.yoga_details-downloadBtn{
+            padding:8px;
+            height:4vh;
+        }
+        /* ----------------------------------------------- */
+        /* media (max-width: 800px) */
     }
     @media (max-width: 800px) { 
             .yoga_details_h1,.yoga_details_h2{

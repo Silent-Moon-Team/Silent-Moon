@@ -166,7 +166,8 @@ div.container.nav-bar {
     width: 60px;
     border-radius: 15px;
     /* padding: 10px; */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
     
 }
 .container .nav_bottom{
@@ -202,13 +203,14 @@ div.container.nav-bar {
     height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(241, 248, 228));;
     
 }
 #login_wrapper h3{
+    padding-bottom: 50px;
     color: #4A503D;
 }
 

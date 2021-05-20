@@ -11,9 +11,9 @@ body{
 ==========================*/
 
 .player_header{
+    padding-top: 20px;
     display:flex;
     justify-content: space-between;
-    margin: 10px 10px 0px 10px;
 }
 
 .player_header i{
@@ -30,20 +30,13 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.player_header_two_buttons button{
-    background: rgba(226,143,131, 0.5);
-}
-
-.player_header_two_buttons i{
-    color: #FAF2DA;
-}
 
 /*=========================
     PlayerMain Styles
 ==========================*/
 
 .player_main{
-    padding-top: 45vh;
+    padding-top: 30vh;
     text-align: center;
 }
 
@@ -57,7 +50,7 @@ body{
 ==========================*/
 .player_main_controls {
     margin-top: 50px;
-    padding-bottom: 35%;
+    padding-bottom: 35vh;
 }
 
 .player_main_controls i{

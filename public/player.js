@@ -28,9 +28,9 @@ pauseButton.addEventListener('click', () => {
 })
 
 iconHeart.addEventListener('click', () => {
-    iconHearth.style.color = 'rgba(226,143,131, 0.8)';
+    iconHeart.style.color = 'rgba(226,143,131, 0.8)';
 })
 
 iconDown.addEventListener('click', () => {
-    iconDown.style.color = 'rgba(226,143,131, 0.8)';
+    iconDown.style.color = 'rgba(226,143,131, 1)';
 })
