@@ -48,10 +48,11 @@ header h1{
 }
 
 .profile_head img{
-    margin-left: 5%;
+    padding-left: 5%;
     width: 80px;
+    height: 80px;
 
-    border-radius:20%;
+    border-radius:50%;
 }
 
 /*====================
