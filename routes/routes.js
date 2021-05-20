@@ -118,4 +118,17 @@ router.get('/yoga_details', ensureAuth, (req, res) => {
     res.render("pages/yoga_details");
 })
 
+// !!   implementing routing from mongo yogaitems
+
+router.get('/yoga_details/:id', (req, res) => {
+
+    dataItem.find()
+        .then(result => {
+            console.log("this is from ROUTES IMPLEMENTED routes");
+            //console.log(result)
+            res.render('pages/yoga', { result })
+        })
+        .catch(err => console.log(err))
+})
+
 module.exports = router;
