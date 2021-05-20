@@ -17,13 +17,9 @@
     <header class="meditation_details_header">
         <!--Buttons auf dem Bild-->
         <div class="meditation_details_buttoncontainer">
-            <a href="/yoga_details" class="meditation_details-backBtn-circle">
-                <i class="las la-times"></i>
-            </a>
-            <div class="meditation_details-favAndDlBtn-circle">
-                <button class="meditation_details-favBtn"><i class="las la-heart"></i></button>
-                <button class="meditation_details-downloadBtn"><i class="las la-cloud-download-alt"></i></button>
-            </div>
+            <button class="meditation_details-favBtn"><i class="las la-heart"></i></button>
+            <button class="meditation_details-downloadBtn"><i class="las la-cloud-download-alt"></i></button>
+        </div>
         </div>
     </header>
 
@@ -35,23 +31,22 @@
         </p>
     </section>
 
-    <section class="meditation_detail_playlist">
+    <section class="meditation_main">
         <h1 class="meditation_detail_playlist-h1">Playlist</h1>
         <% data.forEach(element=> { %>
-
-            <a href=<%=`/med_player/${data.indexOf(element)}`%> class="meditation_detail_playlist-name">
-                <h2 class="meditation_detail_playlist-h2">
-                    <%= element.track.name %>
-                </h2>
-                <audio controls class="meditation_detail_playlist-audio">
-                    <source src=<%=element.track.preview_url %>>
-                </audio>
-
-            </a>
-
-            <% }) %>
+            <div class="meditation_main_a_wrapper">
+                <a href=<%=`/med_player/${data.indexOf(element)}`%>>
+                    <i class="las la-play"></i>
+                    <div class="meditation_main_a_wrapper_inner">
+                        <h2 class="h2">
+                            <%= element.track.name %>
+                        </h2>
+                        <p class="p">0:30</p>
+                    </div>
+                </a>
+                <% }) %>
+            </div>
     </section>
-
     <!-- *********************** -->
     <!-- ******  NAVIGATION   ****** -->
     <!-- *********************** -->
@@ -140,15 +135,6 @@
 
         </nav>
     </div>
-    <script>
-        const favBtn = document.getElementById('fav-Btn');
-        const heart = document.getElementById('heart');
-        const heart2 = document.getElementById('heart2');
-        favBtn.addEventListener('click', () => {
-            heart.style.display = 'none'
-            heart2.style.display = 'inline'
-        })
-    </script>
 </body>
 
 </html>
