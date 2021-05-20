@@ -44,6 +44,7 @@ font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color:#A1A4B2;
+    font-size: 18px;
 }
 
 /*====================
@@ -62,7 +63,6 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Bild1 h2{
-    font-size: 1.5em;
     color:#FFECCC;
     padding-right: 80px; 
     padding-top: 50px;
@@ -71,12 +71,13 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Bild1 h3{
-    font-size: 0.5em;
+    font-size: 1em;
     color:#FFECCC;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 10px;
 }
+
 
 
 .Bild2{
@@ -90,25 +91,27 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .Bild2 h2{
     font-size: 1.5em;
-    padding-top: 50px;
+    padding-top: 75px;
     padding-right: 50px;
     padding-left: 10px;
     
 }
 
 .Bild2 h3{
-    font-size: 0.5em;
+    font-size: 1em;
     padding-left: 10px;
+    font-weight: 600;
     letter-spacing: 3px;
+    padding-top: 4px;
+    padding-bottom: 15px;
 }
 
 /*====================
-    MIN & Start im Bild 
+    MIN & Start im Bild1 
 ======================*/
 .min_start1{
     display: flex;
     justify-content: space-between;
-    font-size: 0.5em;
     padding: 20px 10px 10px 10px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #FAF2DA;
@@ -117,39 +120,52 @@ font-family: 'Source Sans Pro', sans-serif;
 .min_start1 a{
     color: #4A503D;
     text-decoration: none;
-    padding-right: 20px;
-    border: 1px solid #FAF2DA;
-    border-radius: 10px;
-    padding-left: 20px;
+    padding-right: 15px;
+    border: 1px solid none;
+    border-radius: 20px;
+    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     background:#FAF2DA;
+    font-size: 15px;
 }
 
 
+.min_start1 p{
+    padding-top: 5px;
+    font-size:12px;
+    color: #FAF2DA;
+}
+
+
+/*====================
+    MIN & Start im Bild2
+======================*/
 .min_start2{
     display: flex;
     justify-content: space-between;
     font-size: 0.5em;
-    color: #FAF2DA;
-    padding: 50px 10px 10px 10px; 
+    padding: 8px 10px 10px 10px; 
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.min_start2 a{
-    padding-left:20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background: #4A503D;
+.min_start2 p{
+    font-size:12px;
+    color: #FAF2DA;
+    padding-top: 4px;
 }
 
 .min_start2 a{
     color: #FAF2DA;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border: 1px solid none;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #4A503D;
+    font-size:15px;
 }
 
 .sessions{
@@ -215,7 +231,7 @@ figcaption{
 }
 
 .description2 p{
-    padding-bottom: 40px;
+    padding-bottom: 85px;
 
 }
 
