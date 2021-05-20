@@ -41,7 +41,10 @@ header h1{
 .profile_hello{
     font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
-    padding-left: 8%;
+    padding-left: 6%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
 }
 
 .profile_head img{
@@ -56,7 +59,10 @@ header h1{
     padding-left: 5%; 
     color: #A1A4B2;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
     padding-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /*====================
@@ -111,7 +117,17 @@ figcaption{
     letter-spacing: 2px;
 }
 
-.description{
+.description_yoga{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    color: #A1A4B2;
+    margin: 0px 0px 45px 0px;
+
+}
+
+.description_med{
     display:flex;
     justify-content: space-between;
     font-family: 'Source Sans Pro', sans-serif;
@@ -120,3 +136,15 @@ figcaption{
     margin: 0px 0px 45px 0px;
 }
 
+.description_med p{
+    margin-bottom: 85px;
+}
+
+
+
+/*====================
+ Verlinkungen zu yoga und meditation 
+======================*/
+a{
+    text-decoration: none;
+}

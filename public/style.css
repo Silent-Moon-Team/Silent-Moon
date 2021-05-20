@@ -166,7 +166,8 @@ div.container.nav-bar {
     width: 60px;
     border-radius: 15px;
     /* padding: 10px; */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
     
 }
 .container .nav_bottom{
