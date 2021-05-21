@@ -2,8 +2,15 @@
     Global Styles
 ==========================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
 body{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(250,242,218,1) 50%);
+    background: url('/images/Meditation_Player.png') no-repeat center / cover;
 }
 
 /*=========================
@@ -41,8 +48,15 @@ body{
 }
 
 .player_main h2{
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     font-size: 36px;
+    color: #4A503D;
+}
+
+.player_main p{
+    color: #A1A4B2;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*=========================
@@ -56,6 +70,7 @@ body{
 .player_main_controls i{
     padding: 0px 10px;
     font-size: 30px;
+    color: #A1A4B2;
 }
 
 .player_main_controls .skip_button{

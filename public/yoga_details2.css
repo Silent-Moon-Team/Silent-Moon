@@ -32,23 +32,15 @@ font-family: 'Source Sans Pro', sans-serif;
     color: #4A503D;
 }
 
-.yoga_header h2{
-    padding-top: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color:#A0A3b1;
-}
-
 /*====================
     Content Styles
 ======================*/
 
-h1 {
+.yoga_title {
+    font-size: 30px;
     text-align: center;
     margin-top: 20px;
-    color: #A1A4B2
+    color: #000;
 }
 .img_wrapper{
     width: 100%;
@@ -67,6 +59,7 @@ img{
 p{
     width:90vw;
     padding-left: 10vw;
+    color: #A1A4B2;
 }
 
 /*====================

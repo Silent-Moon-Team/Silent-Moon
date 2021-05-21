@@ -18,6 +18,10 @@ font-family: 'Source Sans Pro', sans-serif;
     width: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*====================
     header Silent Moon 
 ======================*/
