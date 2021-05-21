@@ -69,8 +69,9 @@ font-family: 'Source Sans Pro', sans-serif;
     margin: 5px 5px 5px 15px;
     font-size: 42px;
     border-radius: 100%;
-    background: #8E9775;
-    color: white;
+    background: #fff;
+    color: #A1A4B2;
+    border: 1px #A1A4B2 solid;
 }
 
 .music_main_a_wrapper a{
@@ -79,12 +80,13 @@ font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
     text-decoration: none;
     color:black;
-    background: #FAF2DA;
+    background: #fff;
     border-radius: 20px
 }
 
 .music_main_a_wrapper_inner{
     padding-left: 20px;
+    
 }
 
 .h2{

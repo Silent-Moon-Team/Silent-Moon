@@ -7,7 +7,11 @@ module.exports = function (passport) {
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: 'https://immense-depths-58367.herokuapp.com/auth/google/callback'
+            callbackURL: '/auth/google/callback'
+            // ****************************************************************
+            // !  for deploy on HERKU change the callbeckURL !!
+            //!   TO: >>    https://silent-moon.herokuapp.com/auth/google/callback
+            // ****************************************************************
         },
         async (accessToken, refreshToken, profile, done) => {
             // console.log(profile);

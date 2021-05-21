@@ -1,5 +1,6 @@
 const express = require('express');
 const dataItem = require('../models/data')
+const mongoose = require('mongoose');
 const user = require('../models/user')
 const router = express.Router();
 const SpotifyWebApi = require('spotify-web-api-node');
@@ -121,14 +122,39 @@ router.get('/yoga_details', ensureAuth, (req, res) => {
 // !!   implementing routing from mongo yogaitems
 
 router.get('/yoga_details/:id', (req, res) => {
+    console.log("<<<<<<<<<<<<>>>>>>>>>>");
+    console.log(req.params.id);
+    console.log(typeof req.params.id);
+    console.log( String(req.params.id));
 
-    dataItem.find()
-        .then(result => {
-            console.log("this is from ROUTES IMPLEMENTED routes");
-            //console.log(result)
-            res.render('pages/yoga', { result })
+    // dataItem.findOne({_id: new ObjectID(req.params.id)})
+    dataItem.findById(req.params.id)
+        .then(result=> {
+            console.log("TESTING " + JSON.stringify(result));
+            console.log("TESTING " + req.params.id);
+            // console.log("TESTING " + result._id);
+            // console.log("TEsting bla !! > ", result.level);
+            console.log("TESTING category: " + result.category);
+            // console.log("TESTING " + result.url_video);
+            
+            console.log("TESTING TITLE: " + result.title);
+            // console.log("TESTING " + result.description);
+
+            res.render('pages/yoga_details2' , {result})
+            //  !   , {result, _id: req.params.id}
+            // res.send(result.title)
+
         })
         .catch(err => console.log(err))
+
+    // dataItem.findById(req.params.id)
+    //     .then(result => {
+    //         console.log("this is from ROUTES IMPLEMENTED routes");
+    //         console.log("CATCHING THE ID!! >>" + result._id)
+    //         console.log("CATCHING Name >>" + result.title)
+    //         res.render('pages/yoga_details', { result })
+    //     })
+    //     .catch(err => console.log(err))
 })
 
 module.exports = router;

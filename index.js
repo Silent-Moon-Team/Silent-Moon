@@ -119,6 +119,8 @@ app.get('/reminders', router)
 
 app.get('/yoga_details', router)
 
+app.get('/yoga_details2', router)
+
 app.get('/main', router)
 
 // !   NICHT BEARBEITETE ROUTES BELOW

@@ -15,7 +15,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 body{
     margin:0;
-    background-color: #E5E5E5;
+    background-color: #fff;
     ;
 }
 
@@ -32,7 +32,7 @@ body{
     padding-left: 35.5vw;
     padding-top:5vh;
     font-family: 'Source Sans Pro', sans-serif;
-    color:#3F414E;
+    color:#4A503D;
 }
 .reminder_time-meditate-p,.reminder_day-meditate-p{
     color:#A1A4B2;
@@ -46,7 +46,8 @@ form{
     max-width:220px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #3F414E;
-    margin:0 8vw;
+    /* margin:0 8vw; */
+    margin-left: 10vw;
     
  }
  
@@ -136,10 +137,15 @@ form{
 .reminder-daysname,.reminder-daysname2,.reminder-daysname3,.reminder-daysname4,.reminder-daysname5,.reminder-daysname6,.reminder-daysname7{
     border-radius: 50%;
     border: solid #E5E5E5 1px;
-    padding: 10px 15px;
+    width: 40px;
+    height: 40px;
+    /* padding: 10px 15px; */
     font-size:10px;
     background-color: #FCFCFC;
     color: #3F414E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .reminder-daysname-checkbox{
     margin:6vh 0;
@@ -150,8 +156,18 @@ form{
 /*====================
     reminder-daysname-save&ignore Styles
 ======================*/
+
+.saving_wrapper{
+    width:100vw;
+    height: 150px;
+
+    display: flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items: center;
+}
 .reminder-save-Btn{
-    width:30vw;
+    width:30%;
     margin:5vh 40vw;
     padding: 2vh 0;
     border: 1px solid #E28F83;
@@ -225,16 +241,18 @@ form{
     }
     /* ///////////////////////////////////////// */
     .reminder-save-Btn{
-        width:40vw;
+        width:90vw;
         margin:10vh 28vw 0 28vw;
-        padding: 1vh 0;
-        font-size:.8em;
+        padding: 1.7vh 0;
+        font-size:16px;
         text-decoration: none;
         text-align: center;
+        font-weight: 500;
     }
     .reminder-ignore-Btn{
         margin:1vh 36vw;
         letter-spacing: 2px;
-        font-size: .9em;
+        font-size: 16px;
+        font-weight: 500;
     }
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/yoga_details2.css">
+    <title>Yoga details</title>
+
+</head>
+
+<body>
+    <header class="yoga_header">
+        <h1>SILENT MOON</h1>
+
+    </header>
+
+    <h1>
+        <%= result.title %>
+    </h1>
+    <div class="img_wrapper">
+        <img src=<%=result.img_url2 %> alt="">
+    </div>
+
+
+    <section id="btns_wrapper">
+        <footer class="main_footer">
+            <a href="/yoga"><button>ADD</button></a>
+        </footer>
+        <footer class="main_footer">
+            <a href="/yoga"><button>BACK</button></a>
+        </footer>
+    </section>
+
+
+    <p>
+        <%= result.description %>
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/*====================
+    Global Styles
+======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*====================
+    YogaHeader Styles
+======================*/
+
+.yoga_header{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.yoga_header h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4A503D;
+}
+
+.yoga_header h2{
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color:#A0A3b1;
+}
+
+/*====================
+    Content Styles
+======================*/
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #A1A4B2
+}
+.img_wrapper{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+img{
+    width: 90%;
+    
+    text-align: center;
+    text-align: center;
+    border-radius: 25px;
+}
+
+p{
+    width:90vw;
+    padding-left: 10vw;
+}
+
+/*====================
+    Buttons Styles
+======================*/
+
+#btns_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main_footer a button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: #E28F83;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.main_footer p{
+    padding-top: 30px;
+    color: #A1A4B2;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.main_footer p a{
+    color: #E28F83;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+
+

@@ -19,7 +19,9 @@
         <section class="yoga_wrapper">
             <% result.forEach(element=> { %>
                 <div>
-                    <img class="yoga_img" src=<%=element.img_url2 %> alt="coolesBild">
+                    <a href=<%=`/yoga_details/${element._id}`%>>
+                        <img class="yoga_img" src=<%=element.img_url2 %> alt="coolesBild">
+                    </a>
                     <h1>
                         <%= element.title %>
                     </h1>
